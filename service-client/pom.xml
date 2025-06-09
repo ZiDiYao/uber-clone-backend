@@ -1,21 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+
     <parent>
         <groupId>com.zidi.uber</groupId>
         <artifactId>uber-backend-parent</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <groupId>org.zidi</groupId>
+    <groupId>com.zidi.uber</groupId>
     <artifactId>service-client</artifactId>
+    <version>1.0</version>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>service-coupon-client</module>
+        <module>service-customer-client</module>
+        <module>service-driver-client</module>
+        <module>service-order-client</module>
+        <module>service-system-client</module>
+        <module>service-map-client</module>
+        <module>service-rules-client</module>
+        <module>service-dispatch-client</module>
+        <module>service-payment-client</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>20</maven.compiler.source>
         <maven.compiler.target>20</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-
 </project>
