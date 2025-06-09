@@ -18,4 +18,19 @@
         <module>service-coupon</module>
         <module>service-customer</module>
         <module>service-dispatch</module>
-        <module
+        <module>service-driver</module>
+        <module>service-mq</module>
+        <module>service-map</module>
+        <module>service-order</module>
+        <module>service-payment</module>
+        <module>service-rules</module>
+        <module>service-system</module>
+    </modules>
+
+    <properties>
+        <maven.compiler.source>20</maven.compiler.source>
+        <maven.compiler.target>20</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+</project>
