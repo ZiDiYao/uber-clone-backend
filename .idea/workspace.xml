@@ -5,66 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b08325b9-946d-433d-a749-43584e6277b4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/common/common-log/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/common-util/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/rabbit-util/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/service-util/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/spring-security/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/spring-security/src/main/java/org/zidi/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-client/service-coupon-client/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-client/service-coupon-client/src/main/java/org/zidi/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-client/service-customer-client/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-client/service-customer-client/src/main/java/org/zidi/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-client/service-dispatch-client/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-client/service-dispatch-client/src/main/java/org/zidi/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-client/service-driver-client/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-client/service-driver-client/src/main/java/org/zidi/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-client/service-map-client/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-client/service-map-client/src/main/java/org/zidi/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-client/service-order-client/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-client/service-order-client/src/main/java/org/zidi/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-client/service-rules-client/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-client/service-rules-client/src/main/java/org/zidi/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-client/service-system-client/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-client/service-system-client/src/main/java/org/zidi/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service-coupon/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service-coupon/src/main/java/org/zidi/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service-customer/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service-dispatch/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service-dispatch/src/main/java/org/zidi/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service-driver/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service-driver/src/main/java/org/zidi/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service-map/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service-map/src/main/java/org/zidi/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service-mq/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service-mq/src/main/java/org/zidi/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service-order/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service-order/src/main/java/org/zidi/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service-payment/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service-payment/src/main/java/org/zidi/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service-rules/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service-rules/src/main/java/org/zidi/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service-system/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service-system/src/main/java/org/zidi/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-customer/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-customer/src/main/java/org/zidi/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-driver/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-driver/src/main/java/org/zidi/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-mgr/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-mgr/src/main/java/org/zidi/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/org/zidi/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-log/src/main/java/org/zidi/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/model/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-client/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-client/src/main/java/org/zidi/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-util/src/main/java/org/zidi/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-client/service-customer-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-client/service-customer-client/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-client/service-map-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-client/service-map-client/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/zidi/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/rabbit-util/src/main/java/org/zidi/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/org/zidi/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/service-util/src/main/java/org/zidi/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +16,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 2
@@ -99,6 +45,9 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "/Users/yaozidi/Desktop/Uber-clone-backend/uber-clone-backend/service-client/service-payment-client/src/main/java/org/zidi/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.299908",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -125,7 +74,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1749396145788</updated>
-      <workItem from="1749396146917" duration="3579000" />
+      <workItem from="1749396146917" duration="13115000" />
     </task>
     <servers />
   </component>
