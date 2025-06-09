@@ -6,10 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="b08325b9-946d-433d-a749-43584e6277b4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-client/service-customer-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-client/service-customer-client/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-client/service-map-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-client/service-map-client/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/model/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-client/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-system/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-system/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-mq/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-mq/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web-customer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-customer/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,7 +24,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -78,6 +82,8 @@
       <updated>1749396145788</updated>
       <workItem from="1749396146917" duration="13115000" />
       <workItem from="1749456141431" duration="331000" />
+      <workItem from="1749456531314" duration="675000" />
+      <workItem from="1749473521573" duration="2259000" />
     </task>
     <servers />
   </component>
