@@ -5,20 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b08325b9-946d-433d-a749-43584e6277b4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/ServiceCustomerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/config/WxConfigOperator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/config/WxConfigProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/controller/CustomerInfoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/dto/CustomerLoginDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/service/CustomerInfoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/service/Impl/CustomerInfoServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-customer/src/main/resources/bootstrap.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/model/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server-gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-client/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-mq/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-mq/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/web-customer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-customer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-customer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-customer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -37,26 +48,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-18&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/yaozidi/Desktop/Uber-clone-backend/uber-clone-backend/service-client/service-payment-client/src/main/java/org/zidi/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.299908&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "jdk.selected.JAVA_MODULE": "openjdk-18",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "/Users/yaozidi/Desktop/Uber-clone-backend/uber-clone-backend/service-client/service-payment-client/src/main/java/org/zidi/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.299908",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="uber-clone-backend-parent" />
@@ -83,7 +95,7 @@
       <workItem from="1749396146917" duration="13115000" />
       <workItem from="1749456141431" duration="331000" />
       <workItem from="1749456531314" duration="675000" />
-      <workItem from="1749473521573" duration="2259000" />
+      <workItem from="1749473521573" duration="16763000" />
     </task>
     <servers />
   </component>
@@ -155,11 +167,6 @@
           <url>file://$PROJECT_DIR$/service/service-coupon/src/main/java/org/zidi/Main.java</url>
           <line>15</line>
           <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/Main.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/service/service-dispatch/src/main/java/org/zidi/Main.java</url>
