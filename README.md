@@ -1,0 +1,1 @@
+A microservices-based backend system modeled after Uber, featuring separate modules for the user side, driver side, and admin side. The system is built with a multi-module, multi-service architecture to ensure low coupling and high stability. Users can place ride requests, and nearby drivers can accept orders in real time.
