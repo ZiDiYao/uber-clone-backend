@@ -10,7 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class ServiceCustomerApplication {
     public static void main(String[] args) {
         SpringApplication app = new SpringApplication(ServiceCustomerApplication.class);
-        app.setWebApplicationType(WebApplicationType.SERVLET); // 强制指定为 Web 类型
+        app.setWebApplicationType(WebApplicationType.SERVLET);
         app.run(args);
     }
 }

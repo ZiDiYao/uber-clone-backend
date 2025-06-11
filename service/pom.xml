@@ -34,52 +34,6 @@
     </properties>
 
     <dependencies>
-<!--        <dependency>-->
-<!--            <groupId>com.zidi.uber</groupId>-->
-<!--            <artifactId>service-util</artifactId>-->
-<!--            <version>1.0</version>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>com.atguigu.daijia</groupId>-->
-<!--            <artifactId>common-log</artifactId>-->
-<!--            <version>1.0</version>-->
-<!--        </dependency>-->
-
-<!--        <dependency>-->
-<!--            <groupId>com.atguigu.daijia</groupId>-->
-<!--            <artifactId>service-system-client</artifactId>-->
-<!--            <version>1.0</version>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>com.atguigu.daijia</groupId>-->
-<!--            <artifactId>service-coupon-client</artifactId>-->
-<!--            <version>1.0</version>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>com.atguigu.daijia</groupId>-->
-<!--            <artifactId>service-driver-client</artifactId>-->
-<!--            <version>1.0</version>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>com.atguigu.daijia</groupId>-->
-<!--            <artifactId>service-order-client</artifactId>-->
-<!--            <version>1.0</version>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>com.atguigu.daijia</groupId>-->
-<!--            <artifactId>service-customer-client</artifactId>-->
-<!--            <version>1.0</version>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>com.atguigu.daijia</groupId>-->
-<!--            <artifactId>service-rules-client</artifactId>-->
-<!--            <version>1.0</version>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>com.atguigu.daijia</groupId>-->
-<!--            <artifactId>service-map-client</artifactId>-->
-<!--            <version>1.0</version>-->
-<!--        </dependency>-->
 
         <!-- 服务调用feign -->
         <dependency>

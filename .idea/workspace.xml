@@ -5,22 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b08325b9-946d-433d-a749-43584e6277b4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/common-core/src/main/java/org/zidi/uber/ApiResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/config/MyMetaObjectHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/dto/ApiResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service-customer/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/common-log/src/main/java/org/zidi/annotation/Log.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/common-log/src/main/java/org/zidi/aspect/LogAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/common-log/src/main/java/org/zidi/entity/LogRecord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/service/CustomerInfoService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/common-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-core/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/common-core/src/main/java/org/zidi/uber/Result.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/common-log/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-log/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service-customer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-customer/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/ServiceCustomerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/ServiceCustomerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/config/entity/CustomerInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/entity/CustomerInfo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/controller/CustomerInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/controller/CustomerInfoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/mapper/CustomerInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/mapper/CustomerInfoMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/service/Impl/CustomerAuthServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/service/Impl/CustomerAuthServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-customer/src/main/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-customer/src/main/resources/bootstrap.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,38 +47,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "jdk.selected.JAVA_MODULE": "openjdk-18",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "/Users/yaozidi/Desktop/Uber-clone-backend/uber-clone-backend/common/common-core/src/main/java/org/zidi/uber/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.299908",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors",
-    "spring.configuration.checksum": "e6519e967b3e8e07f937097af17ff716",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;signin&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-18&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/yaozidi/Desktop/Uber-clone-backend/uber-clone-backend/common/common-core/src/main/java/org/zidi/uber/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.299908&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.annotationProcessors&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;e6519e967b3e8e07f937097af17ff716&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Spring Boot.ServiceCustomerApplication">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.zidi.uber.Main" />
@@ -148,7 +143,8 @@
       <workItem from="1749456141431" duration="331000" />
       <workItem from="1749456531314" duration="675000" />
       <workItem from="1749473521573" duration="41550000" />
-      <workItem from="1749630948580" duration="3213000" />
+      <workItem from="1749630948580" duration="5114000" />
+      <workItem from="1749649290363" duration="1653000" />
     </task>
     <servers />
   </component>

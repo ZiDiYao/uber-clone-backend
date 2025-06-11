@@ -187,7 +187,15 @@
                 <artifactId>drools-mvel</artifactId>
                 <version>${drools.version}</version>
             </dependency>
+
+            <dependency>
+                <groupId>org.zidi.uber</groupId>
+                <artifactId>common-log</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
         </dependencies>
+
+
     </dependencyManagement>
 
     <build>
