@@ -1,26 +1,25 @@
 package org.zidi.controller;
 
-import com.alibaba.nacos.api.model.v2.Result;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import me.chanjar.weixin.common.error.WxErrorException;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import org.zidi.dto.request.CustomerLoginRequest;
+import org.zidi.dto.response.CustomerLoginResponse;
 import org.zidi.service.CustomerAuthService;
-//import org.zidi.common.Result; // 使用你自己的通用返回类
+//import org.zidi.dto.ApiResponse;
+
 
 @RestController
 @Slf4j
+@RequiredArgsConstructor
 @RequestMapping("/customer/info")
 public class CustomerInfoController {
 
-    @Autowired
-    private CustomerAuthService customerInfoService;
-    @GetMapping("/login/{code}")
-    public Result<Long> login(@PathVariable String code) throws WxErrorException {
-//        log.info("收到登录请求，code = {}", code);
-//        Long userId = (Long) customerInfoService.login(code);
-//        log.info("登录成功，返回用户ID = {}", userId);
-//        return Result.success(userId);
-        return null;
+    private final CustomerAuthService customerInfoService;
+
+    @PostMapping("/login")
+    public CustomerLoginResponse login(@RequestBody CustomerLoginRequest request) throws WxErrorException {
+        return customerInfoService.login(request);
     }
 }

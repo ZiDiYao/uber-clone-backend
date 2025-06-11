@@ -2,7 +2,7 @@ package org.zidi.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
-import org.zidi.config.entity.CustomerInfo;
+import org.zidi.entity.CustomerInfo;
 
 
 @Mapper
