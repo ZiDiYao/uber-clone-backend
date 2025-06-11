@@ -15,7 +15,6 @@ import java.lang.reflect.Method;
 @Component
 @Slf4j
 public class LogAspect {
-
     private final ObjectMapper objectMapper = new ObjectMapper();
 
     @Around("@annotation(org.zidi.annotation.Log)")
