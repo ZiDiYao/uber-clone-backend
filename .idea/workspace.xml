@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b08325b9-946d-433d-a749-43584e6277b4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/common/common-log/src/main/java/org/zidi/annotation/Log.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/common-log/src/main/java/org/zidi/aspect/LogAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/common-log/src/main/java/org/zidi/entity/LogRecord.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/service/CustomerInfoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/common-log/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-log/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-customer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-customer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/ServiceCustomerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/ServiceCustomerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/controller/CustomerInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/controller/CustomerInfoController.java" afterDir="false" />
-    </list>
+    <list default="true" id="b08325b9-946d-433d-a749-43584e6277b4" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -144,7 +132,7 @@
       <workItem from="1749456531314" duration="675000" />
       <workItem from="1749473521573" duration="41550000" />
       <workItem from="1749630948580" duration="5114000" />
-      <workItem from="1749649290363" duration="1653000" />
+      <workItem from="1749649290363" duration="4340000" />
     </task>
     <servers />
   </component>
