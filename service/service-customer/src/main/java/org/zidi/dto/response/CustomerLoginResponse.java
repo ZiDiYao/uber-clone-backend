@@ -7,7 +7,6 @@ import lombok.Data;
 public class CustomerLoginResponse {
 
     private Long userId;
-    private String openId;
     private String nickname;
     private String avatarUrl;
     private String token;

@@ -1,4 +1,4 @@
-package org.zidi.customer.client;
+package org.zidi.customer.client.feign;
 
 
 import org.springframework.cloud.openfeign.FeignClient;
@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.zidi.dto.request.CustomerLoginRequest;
 import org.zidi.dto.response.CustomerLoginResponse;
 
-@FeignClient(value = "service-customer")
+@FeignClient("service-customer")
 public interface CustomerAuthFeignClient {
 
-    @PostMapping("/customer/info/login")
+    @PostMapping("/internal/customer/login")
     CustomerLoginResponse login(@RequestBody CustomerLoginRequest request);
 }
