@@ -34,7 +34,7 @@ public class CustomerAuthServiceImpl implements CustomerAuthService {
     private CustomerLoginResponse buildLoginResponse(CustomerInfo user, String openId) {
         CustomerLoginResponse response = new CustomerLoginResponse();
         response.setUserId(user.getId());
-        response.setOpenId(openId);
+//        response.setOpenId(openId);
         response.setNickname(user.getNickname());
         response.setAvatarUrl(user.getAvatarUrl());
         response.setToken("mock-token"); // TODO: 替换为真正的 JWT token
