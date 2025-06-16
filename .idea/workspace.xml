@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b08325b9-946d-433d-a749-43584e6277b4" name="Changes" comment="" />
+    <list default="true" id="b08325b9-946d-433d-a749-43584e6277b4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/common/service-util/src/main/java/org/zidi/common/util/JwtUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-client/service-customer-client/src/main/java/org/zidi/customer/client/CustomerAuthFeignClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d62b78ce-0fc1-404e-a3a8-9a1ac2f7b3b7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d62b78ce-0fc1-404e-a3a8-9a1ac2f7b3b7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/common-log/src/main/java/org/zidi/entity/LogRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-log/src/main/java/org/zidi/entity/LogRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-client/service-customer-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-client/service-customer-client/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-client/service-customer-client/src/main/java/org/zidi/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/config/WxConfigOperator.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/config/WxConfigOperator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/service/Impl/CustomerAuthServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/service/Impl/CustomerAuthServiceImpl.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,7 +69,7 @@
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.299908&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.annotationProcessors&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;e6519e967b3e8e07f937097af17ff716&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;e6df936fbbb527e446f9363a8676eac7&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -133,6 +144,8 @@
       <workItem from="1749473521573" duration="41550000" />
       <workItem from="1749630948580" duration="5114000" />
       <workItem from="1749649290363" duration="4340000" />
+      <workItem from="1749692118883" duration="1854000" />
+      <workItem from="1750036095318" duration="10081000" />
     </task>
     <servers />
   </component>

@@ -81,7 +81,7 @@ public class CustomerAuthServiceImpl implements CustomerAuthService {
             WxMaJscode2SessionResult session = wxMaService.getUserService().getSessionInfo(code);
             return session.getOpenid();
         } catch (WxErrorException e) {
-            throw new RuntimeException("获取微信 openId 失败", e);
+            throw new RuntimeException("Can NOT Access To OpenID", e);
         }
     }
 
