@@ -5,24 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b08325b9-946d-433d-a749-43584e6277b4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/common/service-util/src/main/java/org/zidi/common/util/RedisUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/dto/request/CustomerInfoRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/dto/response/CustomerInfoResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/service/Impl/CustomerInfoServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-customer/src/main/java/org/zidi/customer/WebCustomerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-customer/src/main/java/org/zidi/customer/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d62b78ce-0fc1-404e-a3a8-9a1ac2f7b3b7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d62b78ce-0fc1-404e-a3a8-9a1ac2f7b3b7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/build.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/deploy.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/service-util/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/service-util/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-client/service-customer-client/src/main/java/org/zidi/customer/client/CustomerAuthFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-client/service-customer-client/src/main/java/org/zidi/customer/client/feign/CustomerAuthFeignClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-customer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-customer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/controller/CustomerInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/controller/CustomerInfoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/dto/response/CustomerLoginResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/dto/response/CustomerLoginResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/service/CustomerInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/service/CustomerInfoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/service/Impl/CustomerAuthServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/service/Impl/CustomerAuthServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/web-customer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-customer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/web-customer/src/main/java/org/zidi/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
