@@ -10,6 +10,6 @@ import org.zidi.dto.response.CustomerLoginResponse;
 @FeignClient("service-customer")
 public interface CustomerAuthFeignClient {
 
-    @PostMapping("/internal/customer/login")
+    @PostMapping("/internal/auth/login")
     CustomerLoginResponse login(@RequestBody CustomerLoginRequest request);
 }
