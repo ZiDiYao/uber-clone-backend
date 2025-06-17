@@ -1,34 +1,30 @@
 package org.zidi.controller;
 
+import com.alibaba.nacos.api.model.v2.Result;
 import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
-import me.chanjar.weixin.common.error.WxErrorException;
-import org.springframework.web.bind.annotation.*;
-import org.zidi.annotation.Log;
-import org.zidi.dto.request.CustomerInfoRequest;
-import org.zidi.dto.request.CustomerLoginRequest;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestHeader;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 import org.zidi.dto.response.CustomerInfoResponse;
-import org.zidi.dto.response.CustomerLoginResponse;
-import org.zidi.service.CustomerAuthService;
-
+import org.zidi.service.CustomerInfoService;
+import org.zidi.uber.customer.ApiResponse;
 
 @RestController
-@Slf4j
 @RequiredArgsConstructor
-@RequestMapping("/internal/customer")
+@RequestMapping("/internal/info")
 public class CustomerInfoController {
 
-    private final CustomerAuthService customerInfoService;
+    private final CustomerInfoService customerInfoService;
 
-    @Log(module = "service-customer", operation = "login")
-    @PostMapping("/login")
-    public CustomerLoginResponse login(@RequestBody CustomerLoginRequest request) throws WxErrorException {
-        return customerInfoService.login(request);
-    }
+    @GetMapping("/getCustomerInfo")
+    public ApiResponse<CustomerInfoResponse> getCustomerInfo(@RequestHeader(value ="token", defaultValue = "") String token) {
+        CustomerInfoResponse response = customerInfoService.getCustomerInfo(token);
+        if (response == null) {
+            return ApiResponse.fail("The user does not exits or did not sign in");
+        }
 
-    @Log(module = "service-customer", operation = "getUserInfo")
-    @PostMapping("/getUserInfo")
-    public CustomerInfoResponse getCustomerInfo(@RequestBody CustomerInfoRequest request){
-        return null;
+        return ApiResponse.ok(response);
     }
 }

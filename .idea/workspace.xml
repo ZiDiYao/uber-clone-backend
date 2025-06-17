@@ -5,9 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b08325b9-946d-433d-a749-43584e6277b4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/scripts/build.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/deploy.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/common-core/src/main/java/org/zidi/uber/common/core/ErrorCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/common-dto/src/main/java/org/zidi/uber/customer/ApiResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/restart.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-client/service-customer-client/src/main/java/org/zidi/customer/client/feign/CustomerInfoFeignClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/controller/CustomerAuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-customer/src/main/java/org/zidi/customer/feign/CustomerInfoFeignClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/common-core/src/main/java/org/zidi/uber/ApiResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-client/service-customer-client/src/main/java/org/zidi/customer/client/feign/CustomerAuthFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-client/service-customer-client/src/main/java/org/zidi/customer/client/feign/CustomerAuthFeignClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-customer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-customer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/controller/CustomerInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/controller/CustomerInfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/dto/ApiResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/dto/request/CustomerInfoRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/service/CustomerInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/service/CustomerInfoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/service/Impl/CustomerInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/service/Impl/CustomerInfoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web-customer/src/main/java/org/zidi/customer/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-customer/src/main/java/org/zidi/customer/feign/CustomerAuthFeignClient.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +37,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/service-client/service-customer-client/src/main/java/org/zidi/customer/client/feign/CustomerInfoFeignClient.java" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
