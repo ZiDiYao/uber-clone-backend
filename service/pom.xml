@@ -11,7 +11,7 @@
 
     </parent>
 
-    <groupId>org.zidi.uber</groupId>
+    <groupId>com.zidi.uber</groupId>
     <artifactId>service</artifactId>
     <packaging>pom</packaging>
     <modules>

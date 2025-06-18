@@ -6,4 +6,5 @@ import lombok.Data;
 public class CustomerLoginRequest {
 
     private String code;
+    private String loginType;
 }

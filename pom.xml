@@ -1,13 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 
-    <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.0.5</version>
-    </parent>
+    <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.zidi.uber</groupId>
     <artifactId>uber-backend-parent</artifactId>
@@ -15,9 +11,11 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>common</module>
+        <module>common/common-core</module>
+        <module>common/common-auth</module>
+<!--        <module>common/common-log</module>-->
+        <module>common/common-thirdparty</module>
         <module>model</module>
-        <module>server-gateway</module>
         <module>service-client</module>
         <module>service</module>
         <module>web</module>
@@ -25,29 +23,38 @@
 
     <properties>
         <java.version>17</java.version>
+        <spring.boot.version>3.1.8</spring.boot.version>
         <cloud.version>2022.0.2</cloud.version>
         <alibaba.version>2022.0.0.0-RC2</alibaba.version>
-        <mybatis-plus.version>3.5.3.1</mybatis-plus.version>
-        <mysql.version>8.0.30</mysql.version>
+
+        <!-- 你项目中使用的库版本号 -->
+        <mybatis.plus.version>3.5.3.1</mybatis.plus.version>
         <knife4j.version>4.1.0</knife4j.version>
         <fastjson.version>2.0.41</fastjson.version>
-        <vod_api.version>2.1.4</vod_api.version>
-        <minio.version>8.5.2</minio.version>
-        <jodatime.version>2.10.1</jodatime.version>
-        <xxl-job.version>2.4.0</xxl-job.version>
-        <wxpay.version>0.2.11</wxpay.version>
-        <weixin.miniapp.version>4.5.5.B</weixin.miniapp.version>
-        <tencentcloud.version>3.1.322</tencentcloud.version>
-        <cos_api.version>5.6.155</cos_api.version>
-        <redisson.version>3.23.3</redisson.version>
-        <commons-io.version>2.11.0</commons-io.version>
-        <seata.version>1.7.1</seata.version>
-        <drools.version>8.41.0.Final</drools.version>
+        <wxmini.version>4.5.5.B</wxmini.version>
         <jackson.version>2.15.3</jackson.version>
+        <redisson.version>3.23.3</redisson.version>
+        <mysql.version>8.0.30</mysql.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
+            <!-- ✅ Spring Boot 官方 BOM -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring.boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-spring-boot3-starter</artifactId>
+                <version>3.5.5</version>
+            </dependency>
+
+            <!-- ✅ Spring Cloud BOM -->
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
@@ -55,6 +62,8 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+
+            <!-- ✅ Spring Cloud Alibaba BOM -->
             <dependency>
                 <groupId>com.alibaba.cloud</groupId>
                 <artifactId>spring-cloud-alibaba-dependencies</artifactId>
@@ -63,17 +72,20 @@
                 <scope>import</scope>
             </dependency>
 
-            <dependency>
-                <groupId>com.baomidou</groupId>
-                <artifactId>mybatis-plus-boot-starter</artifactId>
-                <version>${mybatis-plus.version}</version>
-            </dependency>
-
+            <!-- ✅ 第三方库版本声明（可省略 version） -->
             <dependency>
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
                 <version>${mysql.version}</version>
             </dependency>
+
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis.plus.version}</version>
+            </dependency>
+
+
 
             <dependency>
                 <groupId>com.github.xiaoymin</groupId>
@@ -88,33 +100,9 @@
             </dependency>
 
             <dependency>
-                <groupId>com.qcloud</groupId>
-                <artifactId>vod_api</artifactId>
-                <version>${vod_api.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>io.minio</groupId>
-                <artifactId>minio</artifactId>
-                <version>${minio.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>joda-time</groupId>
-                <artifactId>joda-time</artifactId>
-                <version>${jodatime.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.xuxueli</groupId>
-                <artifactId>xxl-job-core</artifactId>
-                <version>${xxl-job.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.github.wechatpay-apiv3</groupId>
-                <artifactId>wechatpay-java</artifactId>
-                <version>${wxpay.version}</version>
+                <groupId>com.github.binarywang</groupId>
+                <artifactId>weixin-java-miniapp</artifactId>
+                <version>${wxmini.version}</version>
             </dependency>
 
             <dependency>
@@ -123,88 +111,26 @@
                 <version>${redisson.version}</version>
             </dependency>
 
-            <!-- WxJava + 排除 Gson -->
-            <dependency>
-                <groupId>com.github.binarywang</groupId>
-                <artifactId>weixin-java-miniapp</artifactId>
-                <version>${weixin.miniapp.version}</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>com.google.code.gson</groupId>
-                        <artifactId>gson</artifactId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
-
-            <!-- Jackson 显式引入 -->
             <dependency>
                 <groupId>com.fasterxml.jackson.core</groupId>
                 <artifactId>jackson-databind</artifactId>
                 <version>${jackson.version}</version>
             </dependency>
-
-            <dependency>
-                <groupId>com.tencentcloudapi</groupId>
-                <artifactId>tencentcloud-sdk-java</artifactId>
-                <version>${tencentcloud.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.qcloud</groupId>
-                <artifactId>cos_api</artifactId>
-                <version>${cos_api.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>commons-io</groupId>
-                <artifactId>commons-io</artifactId>
-                <version>${commons-io.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>io.seata</groupId>
-                <artifactId>seata-all</artifactId>
-                <version>${seata.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.drools</groupId>
-                <artifactId>drools-core</artifactId>
-                <version>${drools.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.drools</groupId>
-                <artifactId>drools-compiler</artifactId>
-                <version>${drools.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.drools</groupId>
-                <artifactId>drools-decisiontables</artifactId>
-                <version>${drools.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.drools</groupId>
-                <artifactId>drools-mvel</artifactId>
-                <version>${drools.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.zidi.uber</groupId>
-                <artifactId>common-log</artifactId>
-                <version>1.0-SNAPSHOT</version>
-            </dependency>
         </dependencies>
-
-
     </dependencyManagement>
 
     <build>
-        <finalName>${project.artifactId}</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.10.1</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                </configuration>
             </plugin>
         </plugins>
     </build>
+
 </project>
