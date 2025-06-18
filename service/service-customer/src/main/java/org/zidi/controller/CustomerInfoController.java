@@ -16,7 +16,7 @@ public class CustomerInfoController {
 
     private final CustomerInfoService customerInfoService;
 
-    @Log(module = "service-customer", operation = "getCustomerInfo")
+//    @Log(module = "service-customer", operation = "getCustomerInfo")
     @GetMapping("/getCustomerInfo")
     public CustomerInfoResponse getCustomerInfo(@RequestHeader(value = "token", defaultValue = "") String token) {
         // 你可以选择抛出异常，或返回 null（不推荐）

@@ -2,16 +2,15 @@ package org.zidi.service.strategy.Impl;
 
 import cn.binarywang.wx.miniapp.api.WxMaService;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
-import me.chanjar.weixin.common.error.WxErrorException;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.zidi.dto.request.CustomerLoginRequest;
 import org.zidi.entity.CustomerInfo;
 import org.zidi.mapper.CustomerInfoMapper;
 import org.zidi.service.strategy.LoginStrategy;
 import java.time.LocalDateTime;
+import org.zidi.uber.common.thirdparty.WeiXin.WxAuthUtil;
+
 
 @Service
 @RequiredArgsConstructor
@@ -19,6 +18,7 @@ public class WxMiniProgramAuthStrategy implements LoginStrategy {
 
     private final WxMaService wxMaService;
     private final CustomerInfoMapper customerInfoMapper;
+    private final WxAuthUtil wxAuthUtil;
 
     @Override
     public boolean supports(String loginType) {
@@ -28,7 +28,7 @@ public class WxMiniProgramAuthStrategy implements LoginStrategy {
     @Override
     public CustomerInfo login(CustomerLoginRequest request) {
         String code = request.getCode();
-        String openId = getOpenId(code);
+        String openId = wxAuthUtil.getOpenId(code);
 
         // 复用你的 getOrCreateUser 逻辑
         CustomerInfo user = customerInfoMapper.selectOne(
@@ -53,11 +53,4 @@ public class WxMiniProgramAuthStrategy implements LoginStrategy {
         return user;
     }
 
-    private String getOpenId(String code) {
-        try {
-            return wxMaService.getUserService().getSessionInfo(code).getOpenid();
-        } catch (WxErrorException e) {
-            throw new RuntimeException("获取 openId 失败", e);
-        }
-    }
 }

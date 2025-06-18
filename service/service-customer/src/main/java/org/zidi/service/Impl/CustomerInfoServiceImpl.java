@@ -1,6 +1,7 @@
 package org.zidi.service.Impl;
 
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.zidi.dto.response.CustomerInfoResponse;
 import org.zidi.entity.CustomerInfo;
@@ -9,6 +10,7 @@ import org.zidi.service.CustomerInfoService;
 import org.zidi.uber.common.auth.TokenService;
 
 @Service
+@Slf4j
 @RequiredArgsConstructor
 public class CustomerInfoServiceImpl implements CustomerInfoService {
 

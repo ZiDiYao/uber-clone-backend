@@ -6,6 +6,8 @@ import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.reflect.MethodSignature;
+import org.mybatis.logging.Logger;
+import org.mybatis.logging.LoggerFactory;
 import org.springframework.stereotype.Component;
 import org.zidi.annotation.Log;
 
@@ -16,6 +18,8 @@ import java.lang.reflect.Method;
 @Slf4j
 public class LogAspect {
     private final ObjectMapper objectMapper = new ObjectMapper();
+
+//    private static final Logger log = LoggerFactory.getLogger(LogAspect.class);
 
     @Around("@annotation(org.zidi.annotation.Log)")
     public Object around(ProceedingJoinPoint point) throws Throwable {

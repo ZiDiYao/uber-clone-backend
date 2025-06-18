@@ -5,6 +5,8 @@ import cn.binarywang.wx.miniapp.bean.WxMaJscode2SessionResult;
 import me.chanjar.weixin.common.error.WxErrorException;
 import org.springframework.stereotype.Component;
 
+import java.util.UUID;
+
 
 @Component
 public class WxAuthUtil {
@@ -16,9 +18,10 @@ public class WxAuthUtil {
     }
 
     public String getOpenId(String code) {
-        if ("mock".equals(code)) {
-            return "mock-openid-123456";
+        if (code.equals("mock")) {
+            return "mock-open-id-" + UUID.randomUUID();
         }
+
         try {
             WxMaJscode2SessionResult session = wxMaService.getUserService().getSessionInfo(code);
             return session.getOpenid();

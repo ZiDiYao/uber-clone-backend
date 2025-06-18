@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.zidi.uber</groupId>
+        <groupId>com.zidi.uber</groupId>
         <artifactId>common</artifactId>
         <version>1.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
@@ -23,7 +23,7 @@
         </dependency>
         <!-- 如果你用 lombok 和 common-core -->
         <dependency>
-            <groupId>org.zidi.uber</groupId>
+            <groupId>com.zidi.uber</groupId>
             <artifactId>common-core</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>

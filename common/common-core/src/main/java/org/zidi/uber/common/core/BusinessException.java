@@ -1,6 +1,7 @@
 package org.zidi.uber.common.core;
 
 
+@lombok.Getter
 public class BusinessException extends RuntimeException {
     private final int code;
 
@@ -14,7 +15,4 @@ public class BusinessException extends RuntimeException {
         this.code = errorCode.getCode();
     }
 
-    public int getCode() {
-        return code;
-    }
 }

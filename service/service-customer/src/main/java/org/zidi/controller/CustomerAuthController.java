@@ -20,9 +20,12 @@ public class CustomerAuthController {
 
     private final CustomerAuthService customerInfoService;
 
-    @Log(module = "service-customer", operation = "login")
+//    @Log(module = "service-customer", operation = "login")
     @PostMapping("/login")
     public CustomerLoginResponse login(@RequestBody CustomerLoginRequest request) throws WxErrorException {
+        log.info("-------------------------------");
+        log.info("Received login code: {}", request.getCode());
+
         return customerInfoService.login(request);
     }
 }

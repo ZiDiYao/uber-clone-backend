@@ -41,7 +41,7 @@ public class CustomerAuthServiceImpl implements CustomerAuthService {
                 .findFirst()
                 .orElseThrow(() -> {
                     log.warn("Unsupported login type: {}", loginType);
-                    return new BusinessException(ErrorCode.UNSUPPORTED_LOGIN_TYPE, "Unsupported login type: " + loginType);
+                    return new BusinessException(ErrorCode.UNAUTHORIZED, "Unsupported login type: " + loginType);
                 });
     }
 
