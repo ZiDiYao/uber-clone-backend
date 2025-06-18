@@ -9,6 +9,9 @@
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/common/common-dto/pom.xml" />
+        <option value="$PROJECT_DIR$/common/rabbit-util/pom.xml" />
+        <option value="$PROJECT_DIR$/common/service-util/pom.xml" />
         <option value="$PROJECT_DIR$/model/spring-security/pom.xml" />
       </set>
     </option>

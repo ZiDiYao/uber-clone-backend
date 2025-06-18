@@ -4,7 +4,58 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b08325b9-946d-433d-a749-43584e6277b4" name="Changes" comment="" />
+    <list default="true" id="b08325b9-946d-433d-a749-43584e6277b4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/common-auth/src/main/java/org/zidi/uber/common/auth/Impl/RedisTokenServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/common-auth/src/main/java/org/zidi/uber/common/auth/TokenService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/common-core/src/main/java/org/zidi/uber/common/core/BusinessException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/common-core/src/main/java/org/zidi/uber/common/core/RedisUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/common-core/src/main/java/org/zidi/uber/common/core/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/common-thirdparty/src/main/java/org/zidi/uber/common/thirdparty/CommonThirdPartyApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/common-thirdparty/src/main/java/org/zidi/uber/common/thirdparty/WeiXin/WxAuthUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/service/strategy/Impl/WebAuthStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/service/strategy/Impl/WxMiniProgramAuthStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/service/strategy/LoginStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-driver/src/main/java/org/zidi/ServiceDriverApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-driver/src/main/java/org/zidi/service/driver/controller/DriverAuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-driver/src/main/java/org/zidi/service/driver/controller/DriverInfoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-driver/src/main/java/org/zidi/service/driver/service/DriverInfoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-driver/src/main/java/org/zidi/service/driver/service/Impl/DriverInfoServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-map/src/main/java/org/zidi/map/controller/LocationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-map/src/main/java/org/zidi/map/controller/MapController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-customer/src/main/java/org/zidi/web/customer/controller/CustomerAuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-customer/src/main/java/org/zidi/web/customer/controller/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-customer/src/main/java/org/zidi/web/customer/controller/CustomerInfoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-customer/src/main/java/org/zidi/web/customer/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/common-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-core/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/common-core/src/main/java/org/zidi/uber/common/core/ErrorCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-core/src/main/java/org/zidi/uber/common/core/ErrorCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/common-dto/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-thirdparty/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/common-dto/src/main/java/org/zidi/uber/customer/ApiResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/common-util/src/main/java/org/zidi/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/rabbit-util/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-auth/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/rabbit-util/src/main/java/org/zidi/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/service-util/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/service-util/src/main/java/org/zidi/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/service-util/src/main/java/org/zidi/common/util/JwtUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/service-util/src/main/java/org/zidi/common/util/RedisUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-client/service-customer-client/src/main/java/org/zidi/customer/client/feign/CustomerAuthFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-client/service-customer-client/src/main/java/org/zidi/customer/client/feign/CustomerAuthFeignClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-client/service-customer-client/src/main/java/org/zidi/customer/client/feign/CustomerInfoFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-client/service-customer-client/src/main/java/org/zidi/customer/client/feign/CustomerInfoFeignClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-customer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-customer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/ServiceCustomerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/ServiceCustomerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/controller/CustomerAuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/controller/CustomerAuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/controller/CustomerInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/controller/CustomerInfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/dto/request/CustomerLoginRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/dto/request/CustomerLoginRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/service/Impl/CustomerAuthServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/service/Impl/CustomerAuthServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/service/Impl/CustomerInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/service/Impl/CustomerInfoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-driver/src/main/java/org/zidi/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web-customer/src/main/java/org/zidi/customer/WebCustomerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-customer/src/main/java/org/zidi/web/customer/WebCustomerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web-customer/src/main/java/org/zidi/customer/feign/CustomerAuthFeignClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web-customer/src/main/java/org/zidi/customer/feign/CustomerInfoFeignClient.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,12 +110,12 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "/Users/yaozidi/Desktop/Uber-clone-backend/uber-clone-backend/common/common-core/src/main/java/org/zidi/uber/Main.java",
+    "onboarding.tips.debug.path": "/Users/yaozidi/Desktop/Uber-clone-backend/uber-clone-backend/common/common-thirdparty/src/main/java/org/zidi/uber/Main.java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.299908",
     "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors",
-    "spring.configuration.checksum": "e6df936fbbb527e446f9363a8676eac7",
+    "spring.configuration.checksum": "d8bf914bf5df2c6f1b5d1526244d6e74",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -141,6 +192,7 @@
       <workItem from="1749649290363" duration="4340000" />
       <workItem from="1749692118883" duration="1854000" />
       <workItem from="1750036095318" duration="10081000" />
+      <workItem from="1750161256722" duration="18610000" />
     </task>
     <servers />
   </component>
@@ -177,11 +229,6 @@
           <url>file://$PROJECT_DIR$/service-client/src/main/java/org/zidi/Main.java</url>
           <line>15</line>
           <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/common/common-util/src/main/java/org/zidi/Main.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/common/rabbit-util/src/main/java/org/zidi/Main.java</url>

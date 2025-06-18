@@ -15,11 +15,10 @@
     <modules>
         <module>common-log</module>
         <module>common-util</module>
-        <module>rabbit-util</module>
         <module>spring-security</module>
-        <module>service-util</module>
-        <module>common-dto</module>
         <module>common-core</module>
+        <module>common-auth</module>
+        <module>common-thirdparty</module>
     </modules>
 
     <properties>

@@ -11,7 +11,6 @@ import org.zidi.annotation.Log;
 import org.zidi.dto.request.CustomerLoginRequest;
 import org.zidi.dto.response.CustomerLoginResponse;
 import org.zidi.service.CustomerAuthService;
-import org.zidi.uber.customer.ApiResponse;
 
 @RestController
 @Slf4j
@@ -23,12 +22,7 @@ public class CustomerAuthController {
 
     @Log(module = "service-customer", operation = "login")
     @PostMapping("/login")
-    public ApiResponse<CustomerLoginResponse> login(@RequestBody CustomerLoginRequest request) throws WxErrorException {
-        CustomerLoginResponse response = customerInfoService.login(request);
-
-        if (response == null) {
-            return ApiResponse.fail("Fail to sign in");
-        }
-        return ApiResponse.ok(response);
+    public CustomerLoginResponse login(@RequestBody CustomerLoginRequest request) throws WxErrorException {
+        return customerInfoService.login(request);
     }
 }

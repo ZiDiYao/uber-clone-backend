@@ -1,97 +1,62 @@
 package org.zidi.service.Impl;
 
-import cn.binarywang.wx.miniapp.api.WxMaService;
-import cn.binarywang.wx.miniapp.bean.WxMaJscode2SessionResult;
-import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import me.chanjar.weixin.common.error.WxErrorException;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.zidi.entity.CustomerInfo;
 import org.zidi.dto.request.CustomerLoginRequest;
 import org.zidi.dto.response.CustomerLoginResponse;
-import org.zidi.mapper.CustomerInfoMapper;
 import org.zidi.service.CustomerAuthService;
+import org.zidi.service.strategy.LoginStrategy;
+import org.zidi.uber.common.auth.TokenService;
+import org.zidi.uber.common.core.BusinessException;
+import org.zidi.uber.common.core.ErrorCode;
+import java.util.List;
 
-import java.time.LocalDateTime;
-
+@Slf4j
 @Service
+@RequiredArgsConstructor
 public class CustomerAuthServiceImpl implements CustomerAuthService {
 
-    @Autowired
-    private WxMaService wxMaService;
-
-    @Autowired
-    private CustomerInfoMapper customerInfoMapper;
+    private final List<LoginStrategy> loginStrategies;
+    private final TokenService tokenService;
 
     @Override
     public CustomerLoginResponse login(CustomerLoginRequest request) {
-        String code = request.getCode();
-        String openId = getOpenId(code);
-        CustomerInfo customerInfo = getOrCreateUser(openId);
-        return buildLoginResponse(customerInfo, openId);
-    }
+        LoginStrategy strategy = getLoginStrategy(request.getLoginType());
 
-    private CustomerLoginResponse buildLoginResponse(CustomerInfo user, String openId) {
-        CustomerLoginResponse response = new CustomerLoginResponse();
-        response.setUserId(user.getId());
-//        response.setOpenId(openId);
-        response.setNickname(user.getNickname());
-        response.setAvatarUrl(user.getAvatarUrl());
-        response.setToken("mock-token"); // TODO: 替换为真正的 JWT token
-        response.setLoginMessage("登录成功");
-        return response;
-    }
+        CustomerInfo user = strategy.login(request);
 
-    private CustomerInfo getOrCreateUser(String openId) {
-        CustomerInfo user = customerInfoMapper.selectOne(
-                new LambdaQueryWrapper<CustomerInfo>()
-                        .eq(CustomerInfo::getWxOpenId, openId)
-                        .eq(CustomerInfo::getIsDeleted, 0) // 逻辑删除处理
-        );
+        log.info("User login successful. User ID: {}, Login type: {}", user.getId(), request.getLoginType());
 
-        if (user == null) {
-            user = new CustomerInfo();
-            user.setWxOpenId(openId);
-            user.setNickname("用户" + System.currentTimeMillis());
-            user.setAvatarUrl("https://oss.aliyuncs.com/aliyun_id_photo_bucket/default_handsome.jpg");
-            user.setGender("1");
-            user.setStatus(1);
-            user.setIsDeleted(0);
-            user.setCreateTime(LocalDateTime.now());  // 若没配置自动填充
-            user.setUpdateTime(LocalDateTime.now());
-            customerInfoMapper.insert(user);
-        }
-        return user;
+        return buildLoginResponse(user);
     }
 
     /**
-     *
-     *  Just for mocking purpose
-     * @param code
-     * @return
+     * Find the login strategy based on the login type
      */
-
-    // mocking
-    private String getOpenId(String code) {
-        if ("mock".equals(code)) {
-            return "mock-openid-123456";
-        }
-
-        try {
-            WxMaJscode2SessionResult session = wxMaService.getUserService().getSessionInfo(code);
-            return session.getOpenid();
-        } catch (WxErrorException e) {
-            throw new RuntimeException("Can NOT Access To OpenID", e);
-        }
+    private LoginStrategy getLoginStrategy(String loginType) {
+        return loginStrategies.stream()
+                .filter(s -> s.supports(loginType))
+                .findFirst()
+                .orElseThrow(() -> {
+                    log.warn("Unsupported login type: {}", loginType);
+                    return new BusinessException(ErrorCode.UNSUPPORTED_LOGIN_TYPE, "Unsupported login type: " + loginType);
+                });
     }
 
+    /**
+     * Build the login response object
+     */
+    private CustomerLoginResponse buildLoginResponse(CustomerInfo user) {
+        String token = tokenService.generateToken(user.getId());
 
-//    private String getOpenId(String code) {
-//        try {
-//            WxMaJscode2SessionResult session = wxMaService.getUserService().getSessionInfo(code);
-//            return session.getOpenid();
-//        } catch (WxErrorException e) {
-//            throw new RuntimeException("获取微信 openId 失败", e);
-//        }
-//    }
+        CustomerLoginResponse response = new CustomerLoginResponse();
+        response.setUserId(user.getId());
+        response.setNickname(user.getNickname());
+        response.setAvatarUrl(user.getAvatarUrl());
+        response.setToken(token);
+        response.setLoginMessage("Login successful");
+        return response;
+    }
 }
