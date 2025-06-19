@@ -5,43 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b08325b9-946d-433d-a749-43584e6277b4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/common/common-core/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/common-auth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-auth/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/common-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-core/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/common-core/src/main/java/org/zidi/uber/common/core/BusinessException.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-core/src/main/java/org/zidi/uber/common/core/BusinessException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/common-core/src/main/java/org/zidi/uber/common/core/ErrorCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-core/src/main/java/org/zidi/uber/common/core/ErrorCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/common-core/src/main/java/org/zidi/uber/common/core/RedisUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-core/src/main/java/org/zidi/uber/common/core/RedisUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/common-log/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-log/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/common-log/src/main/java/org/zidi/aspect/LogAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-log/src/main/java/org/zidi/aspect/LogAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/common-thirdparty/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-thirdparty/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/common-thirdparty/src/main/java/org/zidi/uber/common/thirdparty/WeiXin/WxAuthUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-thirdparty/src/main/java/org/zidi/uber/common/thirdparty/WeiXin/WxAuthUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/spring-security/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/spring-security/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-client/service-customer-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-client/service-customer-client/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-coupon/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-coupon/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-customer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-customer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/controller/CustomerAuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/controller/CustomerAuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/controller/CustomerInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/controller/CustomerInfoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/service/Impl/CustomerAuthServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/service/Impl/CustomerAuthServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/service/Impl/CustomerInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/service/Impl/CustomerInfoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/service/strategy/Impl/WxMiniProgramAuthStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/service/strategy/Impl/WxMiniProgramAuthStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-dispatch/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-dispatch/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-driver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-driver/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-map/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-map/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-mq/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-mq/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-order/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-order/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-payment/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-payment/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-rules/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-rules/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-system/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-system/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/web-customer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-customer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/web-driver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-driver/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/web-mgr/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-mgr/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +146,7 @@
       <workItem from="1750161256722" duration="23539000" />
       <workItem from="1750241370169" duration="3096000" />
       <workItem from="1750244952388" duration="1544000" />
-      <workItem from="1750246511290" duration="7386000" />
+      <workItem from="1750246511290" duration="10065000" />
     </task>
     <servers />
   </component>
