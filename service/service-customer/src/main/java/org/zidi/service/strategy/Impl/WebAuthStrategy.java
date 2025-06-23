@@ -12,10 +12,9 @@ import org.zidi.service.strategy.LoginStrategy;
 
 public class WebAuthStrategy implements LoginStrategy {
 
-
     @Override
     public boolean supports(String loginType) {
-        return false;
+        return "WEB".equalsIgnoreCase(loginType);
     }
 
     @Override

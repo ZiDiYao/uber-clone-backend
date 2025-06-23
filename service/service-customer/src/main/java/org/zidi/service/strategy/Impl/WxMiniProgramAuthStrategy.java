@@ -1,6 +1,5 @@
 package org.zidi.service.strategy.Impl;
 
-import cn.binarywang.wx.miniapp.api.WxMaService;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -16,7 +15,6 @@ import org.zidi.uber.common.thirdparty.WeiXin.WxAuthUtil;
 @RequiredArgsConstructor
 public class WxMiniProgramAuthStrategy implements LoginStrategy {
 
-    private final WxMaService wxMaService;
     private final CustomerInfoMapper customerInfoMapper;
     private final WxAuthUtil wxAuthUtil;
 
