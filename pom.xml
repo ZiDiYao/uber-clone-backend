@@ -15,7 +15,6 @@
         <module>common/common-auth</module>
 <!--        <module>common/common-log</module>-->
         <module>common/common-thirdparty</module>
-        <module>model</module>
         <module>service-client</module>
         <module>service</module>
         <module>web</module>
