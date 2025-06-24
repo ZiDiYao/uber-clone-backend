@@ -1,0 +1,8 @@
+package org.zidi.rules
+
+rule "rule_1"
+    when
+        eval(true)
+    then
+        System.out.println("Great");
+end
