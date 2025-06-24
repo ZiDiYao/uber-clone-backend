@@ -10,6 +10,7 @@
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/MyBatis-Practice/pom.xml" />
         <option value="$PROJECT_DIR$/common/common-dto/pom.xml" />
         <option value="$PROJECT_DIR$/common/rabbit-util/pom.xml" />
         <option value="$PROJECT_DIR$/common/service-util/pom.xml" />
