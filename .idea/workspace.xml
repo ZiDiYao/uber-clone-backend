@@ -5,11 +5,46 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b08325b9-946d-433d-a749-43584e6277b4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/service/service-rules/src/main/java/org/zidi/rules/config/DroolsConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-driver/src/main/java/org/zidi/service/driver/controller/DriverAuthController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-rules/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-rules/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-rules/src/main/java/org/zidi/rules/ServiceRulesApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-rules/src/main/java/org/zidi/rules/ServiceRulesApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-rules/src/main/resources/rules/FeeRule.drl" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-rules/src/main/resources/rules/FeeRule.drl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/common-core/src/main/java/org/zidi/uber/common/core/ResultCodeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-order/src/main/java/org/zidi/ServiceOrderApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-order/src/main/java/org/zidi/order/controller/OrderInfoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-order/src/main/java/org/zidi/order/controller/OrderMonitorController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-order/src/main/java/org/zidi/order/dto/request/OrderInfoForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-order/src/main/java/org/zidi/order/dto/request/StartDriveForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-order/src/main/java/org/zidi/order/dto/request/UpdateOrderBillForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-order/src/main/java/org/zidi/order/dto/request/UpdateOrderCartForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-order/src/main/java/org/zidi/order/dto/response/CurrentOrderInfoResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-order/src/main/java/org/zidi/order/dto/response/OrderBillResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-order/src/main/java/org/zidi/order/dto/response/OrderPayResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-order/src/main/java/org/zidi/order/dto/response/OrderProfitsharingResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-order/src/main/java/org/zidi/order/dto/response/OrderRewardResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-order/src/main/java/org/zidi/order/dto/response/PageResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-order/src/main/java/org/zidi/order/repository/OrderInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-order/src/main/java/org/zidi/order/service/Impl/OrderInfoServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-order/src/main/java/org/zidi/order/service/OrderInfoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-order/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-customer/src/main/java/org/zidi/web/customer/vo/CurrentOrderInfoVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-customer/src/main/java/org/zidi/web/customer/vo/NewOrderDataVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-customer/src/main/java/org/zidi/web/customer/vo/OrderBillVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-customer/src/main/java/org/zidi/web/customer/vo/OrderInfoVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-customer/src/main/java/org/zidi/web/customer/vo/OrderListVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-customer/src/main/java/org/zidi/web/customer/vo/OrderPayVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-customer/src/main/java/org/zidi/web/customer/vo/OrderProfitsharingVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-customer/src/main/java/org/zidi/web/customer/vo/OrderRewardVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-customer/src/main/java/org/zidi/web/customer/vo/TextAuditingVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/common-core/src/main/java/org/zidi/uber/common/core/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-core/src/main/java/org/zidi/uber/common/core/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/common-util/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/mapper/CustomerInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/order/mapper/CustomerInfoMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/mapper/CustomerLoginLogMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/order/mapper/CustomerLoginLogMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/service/Impl/CustomerInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/service/Impl/CustomerInfoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/service/strategy/Impl/WxMiniProgramAuthStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/service/strategy/Impl/WxMiniProgramAuthStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-order/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-order/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-order/src/main/java/org/zidi/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web-customer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-customer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web-customer/src/main/java/org/zidi/web/customer/controller/CustomerAuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-customer/src/main/java/org/zidi/web/customer/controller/CustomerAuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web-customer/src/main/java/org/zidi/web/customer/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-customer/src/main/java/org/zidi/web/customer/controller/OrderController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +106,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.299908",
     "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors",
-    "spring.configuration.checksum": "cd4fa22a69c6b90c15b95495cf3dd209",
+    "spring.configuration.checksum": "79edefadc6b68bf40b8bfe239379fab3",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -85,7 +120,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FeeRuleTest.testRule">
+  <component name="RunManager" selected="Spring Boot.ServiceRulesApplication">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.zidi.uber.Main" />
       <module name="common-dto" />
@@ -205,7 +240,8 @@
       <workItem from="1750241370169" duration="3096000" />
       <workItem from="1750244952388" duration="1544000" />
       <workItem from="1750246511290" duration="12106000" />
-      <workItem from="1750590346160" duration="18525000" />
+      <workItem from="1750590346160" duration="19408000" />
+      <workItem from="1750934665180" duration="5883000" />
     </task>
     <servers />
   </component>
