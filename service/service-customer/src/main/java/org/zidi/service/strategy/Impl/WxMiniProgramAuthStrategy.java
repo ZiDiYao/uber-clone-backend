@@ -5,7 +5,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.zidi.dto.request.CustomerLoginRequest;
 import org.zidi.entity.CustomerInfo;
-import org.zidi.mapper.CustomerInfoMapper;
+import org.zidi.order.mapper.CustomerInfoMapper;
 import org.zidi.service.strategy.LoginStrategy;
 import java.time.LocalDateTime;
 import org.zidi.uber.common.thirdparty.WeiXin.WxAuthUtil;

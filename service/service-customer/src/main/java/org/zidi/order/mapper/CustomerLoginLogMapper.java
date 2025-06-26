@@ -1,4 +1,4 @@
-package org.zidi.mapper;
+package org.zidi.order.mapper;
 
 
 import org.apache.ibatis.annotations.Mapper;

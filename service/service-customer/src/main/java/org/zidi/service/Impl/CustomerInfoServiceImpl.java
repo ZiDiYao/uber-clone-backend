@@ -5,7 +5,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.zidi.dto.response.CustomerInfoResponse;
 import org.zidi.entity.CustomerInfo;
-import org.zidi.mapper.CustomerInfoMapper;
+import org.zidi.order.mapper.CustomerInfoMapper;
 import org.zidi.service.CustomerInfoService;
 import org.zidi.uber.common.auth.TokenService;
 
