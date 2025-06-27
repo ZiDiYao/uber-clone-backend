@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@MapperScan("org.zidi.mapper")
+//@MapperScan("org.zidi.mapper")
 public class ServiceCustomerApplication {
     public static void main(String[] args) {
         SpringApplication app = new SpringApplication(ServiceCustomerApplication.class);
