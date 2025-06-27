@@ -1,2 +1,6 @@
 server:
   port: 8090
+tencent:
+  cloud:
+    map:
+      key: SFJBZ-QSHE3-ZQL3E-OHQ4R-6EXBJ-6PFP4
