@@ -8,14 +8,12 @@ import java.util.Date;
 @Data
 public class CalculateDrivingLineFormRequest {
 
-    private String id;
+    private BigDecimal startPointLongitude;
 
-    private Long orderId;
+    private BigDecimal startPointLatitude;
 
-    private BigDecimal latitude;
+    private BigDecimal endPointLongitude;
 
-    private BigDecimal longitude;
-
-    private Date createTime;
+    private BigDecimal endPointLatitude;
 
 }
