@@ -8,4 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/internal/order/stats")
 @RequiredArgsConstructor
 public class OrderStatsController {
+
+
+
 }

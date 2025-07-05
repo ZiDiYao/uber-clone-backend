@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b08325b9-946d-433d-a749-43584e6277b4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/service/service-map/src/main/java/org/zidi/map/config/RestTemplateConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-map/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-map/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-map/src/main/java/org/zidi/map/dto/request/CalculateDrivingLineFormRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-map/src/main/java/org/zidi/map/dto/request/CalculateDrivingLineFormRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-map/src/main/java/org/zidi/map/service/Impl/MapServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-map/src/main/java/org/zidi/map/service/Impl/MapServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-map/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-map/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-rules/src/main/java/org/zidi/rules/service/Impl/FeeRuleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-rules/src/main/java/org/zidi/rules/service/Impl/FeeRuleServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +16,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -71,8 +67,8 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.299908",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors",
-    "spring.configuration.checksum": "efdcae17fd11d5b5980e52c456b4b96c",
+    "settings.editor.selected.configurable": "configurable.group.build",
+    "spring.configuration.checksum": "60176d86bfb9de60686e3ad2079b9356",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -86,13 +82,13 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.ServiceMapApplication">
-    <configuration name="ServiceMapApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.zidi.ServiceMapApplication" />
-      <module name="service-map" />
+  <component name="RunManager" selected="Spring Boot.ServiceRulesApplication">
+    <configuration name="RuleTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.zidi.rules.RuleTest" />
+      <module name="service-rules" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.zidi.*" />
+          <option name="PATTERN" value="org.zidi.rules.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -100,20 +96,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="org.zidi.uber.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.zidi.uber.Main" />
-      <module name="MyBatis-Practice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.zidi.uber.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FeeRuleTest.testRule" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RuleTest.testRule" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="service-rules" />
       <extension name="coverage">
         <pattern>
@@ -122,7 +105,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.zidi.rules" />
-      <option name="MAIN_CLASS_NAME" value="org.zidi.rules.FeeRuleTest" />
+      <option name="MAIN_CLASS_NAME" value="org.zidi.rules.RuleTest" />
       <option name="METHOD_NAME" value="testRule" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -142,9 +125,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ServiceCustomerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="service-customer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.zidi.ServiceCustomerApplication" />
+      <option name="VM_PARAMETERS" value="-Dhttp.proxyHost= -Dhttp.proxyPort= -Dhttps.proxyHost= -Dhttps.proxyPort= -Djava.net.useSystemProxies=false" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.zidi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ServiceMapApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="service-map" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.zidi.ServiceMapApplication" />
+      <option name="VM_PARAMETERS" value="-Dhttp.proxyHost= -Dhttp.proxyPort= -Dhttps.proxyHost= -Dhttps.proxyPort= -Djava.net.useSystemProxies=false" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.zidi.*" />
@@ -158,6 +156,7 @@
     <configuration name="ServiceRulesApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="service-rules" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.zidi.rules.ServiceRulesApplication" />
+      <option name="VM_PARAMETERS" value="-Dhttp.proxyHost= -Dhttp.proxyPort= -Dhttps.proxyHost= -Dhttps.proxyPort= -Djava.net.useSystemProxies=false" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.zidi.rules.*" />
@@ -169,19 +168,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.ServiceMapApplication" />
-      <item itemvalue="Application.org.zidi.uber.Main" />
-      <item itemvalue="JUnit.FeeRuleTest.testRule" />
+      <item itemvalue="Application.RuleTest" />
+      <item itemvalue="JUnit.RuleTest.testRule" />
+      <item itemvalue="Spring Boot.ServiceCustomerApplication" />
       <item itemvalue="Spring Boot.ServiceMapApplication" />
       <item itemvalue="Spring Boot.ServiceRulesApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.ServiceMapApplication" />
-        <item itemvalue="Application.ServiceMapApplication" />
-        <item itemvalue="JUnit.FeeRuleTest.testRule" />
         <item itemvalue="Spring Boot.ServiceRulesApplication" />
-        <item itemvalue="Application.org.zidi.uber.Main" />
+        <item itemvalue="JUnit.RuleTest.testRule" />
+        <item itemvalue="Spring Boot.ServiceCustomerApplication" />
+        <item itemvalue="Spring Boot.ServiceMapApplication" />
+        <item itemvalue="Application.RuleTest" />
       </list>
     </recent_temporary>
   </component>
@@ -209,12 +208,25 @@
       <workItem from="1750934665180" duration="7687000" />
       <workItem from="1750943719645" duration="612000" />
       <workItem from="1750945120887" duration="1240000" />
-      <workItem from="1751018302880" duration="12042000" />
+      <workItem from="1751018302880" duration="13845000" />
+      <workItem from="1751276923105" duration="17190000" />
+      <workItem from="1751700599367" duration="6449000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

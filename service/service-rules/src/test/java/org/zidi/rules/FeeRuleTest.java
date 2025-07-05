@@ -8,13 +8,13 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
 public class FeeRuleTest {
-//    @Autowired
-//    private KieContainer kieContainer;
-//
-//    @Test
-//    public void testRule() {
-//        KieSession kieSession = kieContainer.newKieSession();
-//        kieSession.fireAllRules();
-//        kieSession.dispose();
-//    }
+    @Autowired
+    private KieContainer kieContainer;
+
+    @Test
+    public void testRule() {
+        KieSession kieSession = kieContainer.newKieSession();
+        kieSession.fireAllRules();
+        kieSession.dispose();
+    }
 }

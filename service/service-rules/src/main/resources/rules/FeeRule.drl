@@ -1,8 +1,152 @@
-package org.zidi.rules
+package org.zidi.rules.fee
 
-rule "rule_1"
+
+import org.zidi.rules.dto.request.FeeRuleRequest;
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+
+global org.zidi.rules.dto.response.FeeRuleResponse feeRuleResponse;
+
+/**
+1. Base Fare
+    00:00:00 - 06:59:59 => ¥19 for up to 3 km
+    07:00:00 - 23:59:59 => ¥19 for up to 5 km
+*/
+rule "Base Fare (00:00:00 - 06:59:59) - ¥19 for 3km"
+    salience 10
+    no-loop true
     when
-        eval(true)
+        $request: FeeRuleRequest(startTime >= "00:00:00" && startTime < "07:00:00")
     then
-        System.out.println("Great");
+        feeRuleResponse.setBaseDistance(new BigDecimal("3.0"));
+        feeRuleResponse.setBaseDistanceFee(new BigDecimal("19.0"));
+        feeRuleResponse.setExceedDistance(BigDecimal.ZERO);
+        feeRuleResponse.setExceedDistancePrice(new BigDecimal("4.0"));
+        System.out.println("Time: Midnight - 7AM | Base Distance: 3km | Base Fare: ¥19");
+end
+
+rule "Base Fare (07:00:00 - 23:59:59) - ¥19 for 5km"
+    salience 10
+    no-loop true
+    when
+        $request: FeeRuleRequest(startTime >= "07:00:00" && startTime <= "23:59:59")
+    then
+        feeRuleResponse.setBaseDistance(new BigDecimal("5.0"));
+        feeRuleResponse.setBaseDistanceFee(new BigDecimal("19.0"));
+        feeRuleResponse.setExceedDistance(BigDecimal.ZERO);
+        feeRuleResponse.setExceedDistancePrice(new BigDecimal("3.0"));
+        System.out.println("Time: 7AM - Midnight | Base Distance: 5km | Base Fare: ¥19");
+end
+
+/**
+2. Extra Distance Fare
+    Starts after base distance
+    00:00:00 - 06:59:59 => ¥4/km
+    07:00:00 - 23:59:59 => ¥3/km
+*/
+rule "Extra Distance (00:00:00 - 06:59:59) - ¥4/km"
+    salience 10
+    no-loop true
+    when
+        $request: FeeRuleRequest(startTime >= "00:00:00" && startTime <= "06:59:59" && distance > 3.0)
+    then
+        BigDecimal exceed = $request.getDistance().subtract(new BigDecimal("3.0"));
+        feeRuleResponse.setExceedDistance(exceed);
+        feeRuleResponse.setExceedDistancePrice(new BigDecimal("4.0"));
+        System.out.println("Extra Distance: " + exceed + "km | Price: ¥4/km");
+end
+
+rule "Extra Distance (07:00:00 - 23:59:59) - ¥3/km"
+    salience 10
+    no-loop true
+    when
+        $request: FeeRuleRequest(startTime >= "07:00:00" && startTime <= "23:59:59" && distance > 5.0)
+    then
+        BigDecimal exceed = $request.getDistance().subtract(new BigDecimal("5.0"));
+        feeRuleResponse.setExceedDistance(exceed);
+        feeRuleResponse.setExceedDistancePrice(new BigDecimal("3.0"));
+        System.out.println("Extra Distance: " + exceed + "km | Price: ¥3/km");
+end
+
+/**
+3. Waiting Fee
+    After 10 minutes => ¥1/minute
+*/
+rule "Waiting Fee (More than 10 min)"
+    salience 10
+    no-loop true
+    when
+        $request: FeeRuleRequest(waitMinute > 10)
+    then
+        int extraMinutes = $request.getWaitMinute() - 10;
+        feeRuleResponse.setBaseWaitMinute(10);
+        feeRuleResponse.setExceedWaitMinute(extraMinutes);
+        feeRuleResponse.setExceedWaitMinutePrice(new BigDecimal("1.0"));
+        System.out.println("Waiting Time Exceeded: " + extraMinutes + " minutes | ¥1/min");
+end
+
+rule "Waiting Fee (10 min or less)"
+    salience 10
+    no-loop true
+    when
+        $request: FeeRuleRequest(waitMinute <= 10)
+    then
+        feeRuleResponse.setBaseWaitMinute(10);
+        feeRuleResponse.setExceedWaitMinute(0);
+        feeRuleResponse.setExceedWaitMinutePrice(new BigDecimal("1.0"));
+        System.out.println("No additional waiting fee applied.");
+end
+
+/**
+4. Long Distance Fee
+    After 12 km => ¥1/km
+*/
+rule "Long Distance Fee (More than 12km)"
+    salience 10
+    no-loop true
+    when
+        $request: FeeRuleRequest(distance > 12.0)
+    then
+        BigDecimal exceed = $request.getDistance().subtract(new BigDecimal("12.0"));
+        feeRuleResponse.setBaseLongDistance(new BigDecimal("12.0"));
+        feeRuleResponse.setExceedLongDistance(exceed);
+        feeRuleResponse.setExceedLongDistancePrice(new BigDecimal("1.0"));
+        System.out.println("Long Distance Exceeded: " + exceed + "km | ¥1/km");
+end
+
+rule "Long Distance Fee (12km or less)"
+    salience 10
+    no-loop true
+    when
+        $request: FeeRuleRequest(distance <= 12.0)
+    then
+        feeRuleResponse.setBaseLongDistance(new BigDecimal("12.0"));
+        feeRuleResponse.setExceedLongDistance(BigDecimal.ZERO);
+        feeRuleResponse.setExceedLongDistancePrice(BigDecimal.ZERO);
+        System.out.println("No long distance fee.");
+end
+
+/**
+5. Total Fare Calculation
+    Total = Base Fare + Extra Distance Fee + Waiting Fee + Long Distance Fee
+*/
+rule "Calculate Total Fare"
+    salience 10
+    no-loop true
+    when
+        $request: FeeRuleRequest(distance > 0.0)
+    then
+        BigDecimal distanceFare = feeRuleResponse.getBaseDistanceFee()
+            .add(feeRuleResponse.getExceedDistance().multiply(feeRuleResponse.getExceedDistancePrice()));
+        BigDecimal waitFare = new BigDecimal(feeRuleResponse.getExceedWaitMinute())
+            .multiply(feeRuleResponse.getExceedWaitMinutePrice());
+        BigDecimal longFare = feeRuleResponse.getExceedLongDistance()
+            .multiply(feeRuleResponse.getExceedLongDistancePrice());
+
+        BigDecimal total = distanceFare.add(waitFare).add(longFare);
+        feeRuleResponse.setDistanceFee(distanceFare);
+        feeRuleResponse.setWaitFee(waitFare);
+        feeRuleResponse.setLongDistanceFee(longFare);
+        feeRuleResponse.setTotalAmount(total);
+        System.out.println("Total Fare: ¥" + total);
 end

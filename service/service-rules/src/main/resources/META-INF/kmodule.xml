@@ -1,0 +1,5 @@
+<kmodule xmlns="http://www.drools.org/xsd/kmodule">
+    <kbase name="rules" default="true" packages="org.zidi.rules.fee">
+        <ksession name="defaultSession" default="true"/>
+    </kbase>
+</kmodule>
