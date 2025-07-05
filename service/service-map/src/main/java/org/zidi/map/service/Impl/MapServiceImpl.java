@@ -36,7 +36,7 @@ public class MapServiceImpl implements MapService {
 
         JSONArray routes = result.getJSONArray("routes");
         if (routes == null || routes.isEmpty()) {
-            throw new RuntimeException("未找到可用路线");
+            throw new RuntimeException("No Route Available");
         }
 
         JSONObject route = routes.getJSONObject(0);

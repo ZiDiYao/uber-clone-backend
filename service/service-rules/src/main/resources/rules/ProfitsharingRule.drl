@@ -1,0 +1,125 @@
+//// The `package` does not need to reflect the actual directory structure; it can be any value like com.abc.
+//// DRL files under the same package can access each other.
+//package com.atguigu.daijia
+//
+//import com.atguigu.daijia.model.form.rules.ProfitsharingRuleRequest;
+//import java.math.BigDecimal;
+//import java.math.RoundingMode;
+//
+//// Global response object to hold calculated results
+//global com.atguigu.daijia.model.vo.rules.ProfitsharingRuleResponse profitsharingRuleResponse;
+//
+///**
+// * Rule: Payment platform fee (WeChat)
+// * Payment rate: 0.6%
+// */
+//rule "Pay WeChat Platform Fee - 0.6% Rate"
+//    salience 10
+//    no-loop true
+//    when
+//        $rule: ProfitsharingRuleRequest()
+//    then
+//        profitsharingRuleResponse.setOrderAmount($rule.getOrderAmount());
+//        profitsharingRuleResponse.setPaymentRate(new BigDecimal("0.006"));
+//        BigDecimal paymentFee = profitsharingRuleResponse.getOrderAmount()
+//            .multiply(profitsharingRuleResponse.getPaymentRate())
+//            .setScale(2, RoundingMode.HALF_UP);
+//        profitsharingRuleResponse.setPaymentFee(paymentFee);
+//        System.out.println("WeChat platform fee: " + paymentFee + " yuan");
+//end
+//
+///**
+// * Rule: Order amount ≤ 100
+// * - Orders ≤ 10 today → Platform takes 20%
+// */
+//rule "Order ≤ 100 and Order Count ≤ 10"
+//    salience 10
+//    no-loop true
+//    when
+//        $rule: ProfitsharingRuleRequest(orderAmount <= 100.0 && orderNum <= 10)
+//    then
+//        BigDecimal total = profitsharingRuleResponse.getOrderAmount().subtract(profitsharingRuleResponse.getPaymentFee());
+//        BigDecimal platformIncome = total.multiply(new BigDecimal("0.20")).setScale(2, RoundingMode.HALF_UP);
+//        BigDecimal driverTotalIncome = total.subtract(platformIncome);
+//        BigDecimal driverTax = driverTotalIncome.multiply(new BigDecimal("0.10")).setScale(2, RoundingMode.HALF_UP);
+//        BigDecimal driverIncome = driverTotalIncome.subtract(driverTax);
+//
+//        profitsharingRuleResponse.setPlatformIncome(platformIncome);
+//        profitsharingRuleResponse.setDriverIncome(driverIncome);
+//        profitsharingRuleResponse.setDriverTaxRate(new BigDecimal("0.10"));
+//        profitsharingRuleResponse.setDriverTaxFee(driverTax);
+//
+//        System.out.println("Platform income: " + platformIncome + " yuan, Driver income: " + driverIncome + " yuan, Driver tax: " + driverTax + " yuan");
+//end
+//
+///**
+// * Rule: Order amount ≤ 100
+// * - Orders > 10 today → Platform takes 18%
+// */
+//rule "Order ≤ 100 and Order Count > 10"
+//    salience 10
+//    no-loop true
+//    when
+//        $rule: ProfitsharingRuleRequest(orderAmount <= 100.0 && orderNum > 10)
+//    then
+//        BigDecimal total = profitsharingRuleResponse.getOrderAmount().subtract(profitsharingRuleResponse.getPaymentFee());
+//        BigDecimal platformIncome = total.multiply(new BigDecimal("0.18")).setScale(2, RoundingMode.HALF_UP);
+//        BigDecimal driverTotalIncome = total.subtract(platformIncome);
+//        BigDecimal driverTax = driverTotalIncome.multiply(new BigDecimal("0.10")).setScale(2, RoundingMode.HALF_UP);
+//        BigDecimal driverIncome = driverTotalIncome.subtract(driverTax);
+//
+//        profitsharingRuleResponse.setPlatformIncome(platformIncome);
+//        profitsharingRuleResponse.setDriverIncome(driverIncome);
+//        profitsharingRuleResponse.setDriverTaxRate(new BigDecimal("0.10"));
+//        profitsharingRuleResponse.setDriverTaxFee(driverTax);
+//
+//        System.out.println("Platform income: " + platformIncome + " yuan, Driver income: " + driverIncome + " yuan, Driver tax: " + driverTax + " yuan");
+//end
+//
+///**
+// * Rule: Order amount > 100
+// * - Orders ≤ 10 today → Platform takes 18%
+// */
+//rule "Order > 100 and Order Count ≤ 10"
+//    salience 10
+//    no-loop true
+//    when
+//        $rule: ProfitsharingRuleRequest(orderAmount > 100.0 && orderNum <= 10)
+//    then
+//        BigDecimal total = profitsharingRuleResponse.getOrderAmount().subtract(profitsharingRuleResponse.getPaymentFee());
+//        BigDecimal platformIncome = total.multiply(new BigDecimal("0.18")).setScale(2, RoundingMode.HALF_UP);
+//        BigDecimal driverTotalIncome = total.subtract(platformIncome);
+//        BigDecimal driverTax = driverTotalIncome.multiply(new BigDecimal("0.10")).setScale(2, RoundingMode.HALF_UP);
+//        BigDecimal driverIncome = driverTotalIncome.subtract(driverTax);
+//
+//        profitsharingRuleResponse.setPlatformIncome(platformIncome);
+//        profitsharingRuleResponse.setDriverIncome(driverIncome);
+//        profitsharingRuleResponse.setDriverTaxRate(new BigDecimal("0.10"));
+//        profitsharingRuleResponse.setDriverTaxFee(driverTax);
+//
+//        System.out.println("Platform income: " + platformIncome + " yuan, Driver income: " + driverIncome + " yuan, Driver tax: " + driverTax + " yuan");
+//end
+//
+///**
+// * Rule: Order amount > 100
+// * - Orders > 10 today → Platform takes 16%
+// */
+//rule "Order > 100 and Order Count > 10"
+//    salience 10
+//    no-loop true
+//    when
+//        $rule: ProfitsharingRuleRequest(orderAmount > 100.0 && orderNum > 10)
+//    then
+//        BigDecimal total = profitsharingRuleResponse.getOrderAmount().subtract(profitsharingRuleResponse.getPaymentFee());
+//        BigDecimal platformIncome = total.multiply(new BigDecimal("0.16")).setScale(2, RoundingMode.HALF_UP);
+//        BigDecimal driverTotalIncome = total.subtract(platformIncome);
+//        BigDecimal driverTax = driverTotalIncome.multiply(new BigDecimal("0.10")).setScale(2, RoundingMode.HALF_UP);
+//        BigDecimal driverIncome = driverTotalIncome.subtract(driverTax);
+//
+//        profitsharingRuleResponse.setPlatformIncome(platformIncome);
+//        profitsharingRuleResponse.setDriverIncome(driverIncome);
+//        profitsharingRuleResponse.setDriverTaxRate(new BigDecimal("0.10"));
+//        profitsharingRuleResponse.setDriverTaxFee(driverTax);
+//
+//        System.out.println("Platform income: " + platformIncome + " yuan, Driver income: " + driverIncome + " yuan, Driver tax: " + driverTax + " yuan");
+//end
