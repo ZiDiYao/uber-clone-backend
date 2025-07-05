@@ -5,26 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b08325b9-946d-433d-a749-43584e6277b4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/service-client/service-rules-client/src/main/java/org/zidi/rules/client/FeeRuleFeignClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service-rules/src/main/java/org/zidi/rules/controller/FeeRuleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service-rules/src/main/java/org/zidi/rules/controller/RewardRuleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service-rules/src/main/java/org/zidi/rules/dto/request/FeeRuleRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service-rules/src/main/java/org/zidi/rules/dto/response/FeeRuleResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service-rules/src/main/java/org/zidi/rules/service/FeeRuleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service-rules/src/main/java/org/zidi/rules/service/Impl/FeeRuleServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service-rules/src/main/resources/META-INF/kmodule.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service-rules/src/test/java/org/zidi/rules/RuleTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-customer/src/main/resources/application.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-customer/src/main/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-customer/src/main/resources/bootstrap.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-map/src/main/java/org/zidi/ServiceMapApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-map/src/main/java/org/zidi/ServiceMapApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-map/src/main/java/org/zidi/map/service/Impl/MapServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-map/src/main/java/org/zidi/map/service/Impl/MapServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-order/src/main/java/org/zidi/order/controller/OrderStatsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-order/src/main/java/org/zidi/order/controller/OrderStatsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-rules/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-rules/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-rules/src/main/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-rules/src/main/resources/bootstrap.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-rules/src/main/resources/rules/FeeRule.drl" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-rules/src/main/resources/rules/FeeRule.drl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-rules/src/main/resources/rules/ProfitsharingRule.drl" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-rules/src/main/resources/rules/ProfitsharingRule.drl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-rules/src/test/java/org/zidi/rules/FeeRuleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-rules/src/test/java/org/zidi/rules/FeeRuleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-rules/src/main/java/org/zidi/rules/service/Impl/FeeRuleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-rules/src/main/java/org/zidi/rules/service/Impl/FeeRuleServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +82,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RuleTest.testRule">
+  <component name="RunManager" selected="Spring Boot.ServiceRulesApplication">
     <configuration name="RuleTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.zidi.rules.RuleTest" />
       <module name="service-rules" />
@@ -194,8 +176,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RuleTest.testRule" />
         <item itemvalue="Spring Boot.ServiceRulesApplication" />
+        <item itemvalue="JUnit.RuleTest.testRule" />
         <item itemvalue="Spring Boot.ServiceCustomerApplication" />
         <item itemvalue="Spring Boot.ServiceMapApplication" />
         <item itemvalue="Application.RuleTest" />
@@ -228,7 +210,7 @@
       <workItem from="1750945120887" duration="1240000" />
       <workItem from="1751018302880" duration="13845000" />
       <workItem from="1751276923105" duration="17190000" />
-      <workItem from="1751700599367" duration="3321000" />
+      <workItem from="1751700599367" duration="6449000" />
     </task>
     <servers />
   </component>

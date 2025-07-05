@@ -22,6 +22,6 @@ public class FeeRuleServiceImpl implements FeeRuleService {
         kieSession.insert(feeRuleRequest);
         kieSession.fireAllRules();
         kieSession.dispose();
-        return null;
+        return feeRuleResponse;
     }
 }
