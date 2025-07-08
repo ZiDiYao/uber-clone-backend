@@ -5,8 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b08325b9-946d-433d-a749-43584e6277b4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Stream/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stream/src/main/java/org/zidi/uber/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stream/src/main/java/org/zidi/uber/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stream/src/main/java/org/zidi/uber/OrderSummary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/common-core/src/main/java/org/zidi/uber/common/core/Enum/OrderStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-order/src/main/java/org/zidi/order/entity/OrderInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-order/src/main/java/org/zidi/order/mapper/OrderInfoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-order/src/main/resources/mapper/OrderInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-order/src/test/java/org/zidi/order/mapper/StreamTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-rules/src/main/java/org/zidi/rules/service/Impl/FeeRuleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-rules/src/main/java/org/zidi/rules/service/Impl/FeeRuleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/common-core/src/main/java/org/zidi/uber/common/core/BusinessException.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-core/src/main/java/org/zidi/uber/common/core/BusinessException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/common-core/src/main/java/org/zidi/uber/common/core/ErrorCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-core/src/main/java/org/zidi/uber/common/core/Enum/ErrorCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/common-core/src/main/java/org/zidi/uber/common/core/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-core/src/main/java/org/zidi/uber/common/core/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/common-core/src/main/java/org/zidi/uber/common/core/ResultCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-core/src/main/java/org/zidi/uber/common/core/Enum/ResultCodeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/service/Impl/CustomerAuthServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/service/Impl/CustomerAuthServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-order/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-order/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-order/src/main/java/org/zidi/order/controller/OrderCoreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-order/src/main/java/org/zidi/order/controller/OrderCoreController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-order/src/main/java/org/zidi/order/controller/OrderStatsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-order/src/main/java/org/zidi/order/controller/OrderStatsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-order/src/main/java/org/zidi/order/repository/OrderInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-order/src/main/java/org/zidi/order/service/Impl/OrderCoreServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-order/src/main/java/org/zidi/order/service/Impl/OrderCoreServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-order/src/main/java/org/zidi/order/service/Impl/OrderStatisticsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-order/src/main/java/org/zidi/order/service/Impl/OrderStatisticsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-order/src/main/java/org/zidi/order/service/OrderCoreService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-order/src/main/java/org/zidi/order/service/OrderCoreService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-order/src/main/java/org/zidi/order/service/OrderStatisticsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-order/src/main/java/org/zidi/order/service/OrderStatisticsService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +39,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -55,15 +78,15 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "features/routeCalculating",
+    "git-widget-placeholder": "features/startOrder",
     "jdk.selected.JAVA_MODULE": "openjdk-18",
-    "last_directory_selection": "/Users/yaozidi/Desktop/Uber-clone-backend/uber-clone-backend/service/service-rules/src/main/java/org/zidi/rules",
+    "last_directory_selection": "/Users/yaozidi/Desktop/Uber-clone-backend/uber-clone-backend/service/service-order/src/test/java",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "/Users/yaozidi/Desktop/Uber-clone-backend/uber-clone-backend/MyBatis-Practice/src/main/java/org/zidi/uber/Main.java",
+    "onboarding.tips.debug.path": "/Users/yaozidi/Desktop/Uber-clone-backend/uber-clone-backend/Stream/src/main/java/org/zidi/uber/Main.java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.299908",
@@ -82,7 +105,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.ServiceRulesApplication">
+  <component name="RunManager">
     <configuration name="RuleTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.zidi.rules.RuleTest" />
       <module name="service-rules" />
@@ -210,7 +233,7 @@
       <workItem from="1750945120887" duration="1240000" />
       <workItem from="1751018302880" duration="13845000" />
       <workItem from="1751276923105" duration="17190000" />
-      <workItem from="1751700599367" duration="6449000" />
+      <workItem from="1751700599367" duration="28645000" />
     </task>
     <servers />
   </component>

@@ -1,4 +1,4 @@
-package org.zidi.uber.common.core;
+package org.zidi.uber.common.core.Enum;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
