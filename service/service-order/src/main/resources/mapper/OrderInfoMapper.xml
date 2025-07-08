@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.zidi.order.mapper.OrderInfoMapper">
+
+    <insert id="insertOrder" parameterType="org.zidi.order.entity.OrderInfo">
+        INSERT INTO daijia_order.order_info(
+            customer_id, order_no, start_location, start_point_longitude, start_point_latitude,
+            end_location, end_point_longitude, end_point_latitude, expect_distance, real_distance,
+            expect_amount, real_amount, favour_fee, driver_id, accept_time, arrive_time,
+            start_service_time, end_service_time, pay_time, cancel_rule_id, car_license,
+            car_type, car_front_url, car_back_url, transaction_id, status, remark
+        )
+        VALUES (
+                   #{customerId}, #{orderNo}, #{startLocation}, #{startPointLongitude}, #{startPointLatitude},
+                   #{endLocation}, #{endPointLongitude}, #{endPointLatitude}, #{expectDistance}, #{realDistance},
+                   #{expectAmount}, #{realAmount}, #{favourFee}, #{driverId}, #{acceptTime}, #{arriveTime},
+                   #{startServiceTime}, #{endServiceTime}, #{payTime}, #{cancelRuleId}, #{carLicense},
+                   #{carType}, #{carFrontUrl}, #{carBackUrl}, #{transactionId}, #{status}, #{remark}
+               )
+    </insert>
+
+    <update id="updateOrder" parameterType="org.zidi.order.entity.OrderInfo">
+        UPDATE daijia_order.order_info SET
+                                           customer_id = #{customerId},
+                                           order_no = #{orderNo},
+                                           start_location = #{startLocation},
+                                           start_point_longitude = #{startPointLongitude},
+                                           start_point_latitude = #{startPointLatitude},
+                                           end_location = #{endLocation},
+                                           end_point_longitude = #{endPointLongitude},
+                                           end_point_latitude = #{endPointLatitude},
+                                           expect_distance = #{expectDistance},
+                                           real_distance = #{realDistance},
+                                           expect_amount = #{expectAmount},
+                                           real_amount = #{realAmount},
+                                           favour_fee = #{favourFee},
+                                           driver_id = #{driverId},
+                                           accept_time = #{acceptTime},
+                                           arrive_time = #{arriveTime},
+                                           start_service_time = #{startServiceTime},
+                                           end_service_time = #{endServiceTime},
+                                           pay_time = #{payTime},
+                                           cancel_rule_id = #{cancelRuleId},
+                                           car_license = #{carLicense},
+                                           car_type = #{carType},
+                                           car_front_url = #{carFrontUrl},
+                                           car_back_url = #{carBackUrl},
+                                           transaction_id = #{transactionId},
+                                           status = #{status},
+                                           remark = #{remark}
+        WHERE id = #{id}
+    </update>
+
+    <select id="selectById" parameterType="long" resultType="org.zidi.order.entity.OrderInfo">
+        SELECT * FROM daijia_order.order_info WHERE id = #{id}
+    </select>
+
+    <select id="selectAll" resultType="org.zidi.order.entity.OrderInfo">
+        SELECT * FROM daijia_order.order_info
+    </select>
+
+    <delete id="deleteById" parameterType="long">
+        DELETE FROM daijia_order.order_info WHERE id = #{id}
+    </delete>
+
+</mapper>
+

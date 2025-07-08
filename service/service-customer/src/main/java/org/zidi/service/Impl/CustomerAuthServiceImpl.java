@@ -10,7 +10,7 @@ import org.zidi.service.CustomerAuthService;
 import org.zidi.service.strategy.LoginStrategy;
 import org.zidi.uber.common.auth.TokenService;
 import org.zidi.uber.common.core.BusinessException;
-import org.zidi.uber.common.core.ErrorCode;
+import org.zidi.uber.common.core.Enum.ErrorCode;
 import java.util.List;
 
 @Slf4j

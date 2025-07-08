@@ -1,17 +1,72 @@
 package org.zidi.order.service.Impl;
 
+import lombok.RequiredArgsConstructor;
+import org.springframework.beans.BeanUtils;
+import org.springframework.stereotype.Service;
 import org.zidi.order.dto.request.OrderInfoFormRequest;
 import org.zidi.order.dto.response.CurrentOrderInfoResponse;
+import org.zidi.order.mapper.OrderInfoMapper;
+import org.zidi.order.entity.OrderInfo;
 import org.zidi.order.service.OrderCoreService;
+import org.zidi.uber.common.core.Enum.OrderStatus;
 
+import java.util.UUID;
+
+@Service
+@RequiredArgsConstructor
 public class OrderCoreServiceImpl implements OrderCoreService {
+
+    private final OrderInfoMapper orderInfoMapper;
+
+    /**
+     *
+     * Customer starts an order, then save the orderInfo into DATABASE
+     * @param orderInfoForm
+     * @return
+     */
     @Override
-    public Long saveOrderInfo(OrderInfoFormRequest orderInfoForm) {
-        return null;
+    public String saveOrderInfo(OrderInfoFormRequest orderInfoForm) {
+        OrderInfo orderInfo = convertToEntity(orderInfoForm);
+
+        // Insert into dataBase
+        orderInfoMapper.insertOrder(orderInfo);
+        // return the ID if success
+        return orderInfo.getOrderNo();
+    }
+
+    private String generateOrderNo(){
+        String uuid = UUID.randomUUID().toString().replace("-", "");
+        System.out.println(uuid);
+        return uuid;
+    }
+
+    private OrderInfo convertToEntity(OrderInfoFormRequest form) {
+        OrderInfo entity = new OrderInfo();
+        entity.setCustomerId(form.getCustomerId());
+        entity.setOrderNo(form.getOrderNo());
+        entity.setStartLocation(form.getStartLocation());
+        entity.setStartPointLongitude(form.getStartPointLongitude());
+        entity.setStartPointLatitude(form.getStartPointLatitude());
+        entity.setEndLocation(form.getEndLocation());
+        entity.setEndPointLongitude(form.getEndPointLongitude());
+        entity.setEndPointLatitude(form.getEndPointLatitude());
+        entity.setFavourFee(form.getFavourFee());
+        entity.setRemark(form.getRemark());
+        entity.setExpectAmount(form.getExpectAmount());
+        entity.setExpectDistance(form.getExpectDistance());
+        // 设置后端生成的字段
+        entity.setStatus(OrderStatus.WAITING.getCode());
+        entity.setOrderNo(generateOrderNo()); // 假设你有这个方法
+        entity.setAcceptTime(null); // 还没接单
+        return entity;
     }
 
     @Override
-    public Integer getOrderStatus(Long orderId) {
+    public Integer getOrderStatus(String OrderNo) {
+        // get the status from
+
+
+
         return null;
     }
 

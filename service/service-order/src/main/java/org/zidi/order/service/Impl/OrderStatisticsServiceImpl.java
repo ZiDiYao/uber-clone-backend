@@ -4,7 +4,7 @@ import org.springframework.data.domain.Page;
 import org.zidi.order.dto.response.OrderProfitsharingResponse;
 import org.zidi.order.dto.response.OrderRewardResponse;
 import org.zidi.order.dto.response.PageResponse;
-import org.zidi.order.repository.OrderInfo;
+import org.zidi.order.entity.OrderInfo;
 import org.zidi.order.service.OrderStatisticsService;
 
 public class OrderStatisticsServiceImpl implements OrderStatisticsService {

@@ -1,6 +1,7 @@
 package org.zidi.uber.common.core;
 
 import lombok.Data;
+import org.zidi.uber.common.core.Enum.ResultCodeEnum;
 
 @Data
 public class Result<T> {
