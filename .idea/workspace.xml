@@ -5,28 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b08325b9-946d-433d-a749-43584e6277b4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Stream/src/main/java/org/zidi/uber/ExtraPracticeApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stream/src/main/java/org/zidi/uber/redis/Serializable/JacksonSerializeDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stream/src/main/java/org/zidi/uber/redis/Serializable/JdkSerializeDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stream/src/main/java/org/zidi/uber/redis/Serializable/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stream/src/main/java/org/zidi/uber/redis/config/RedisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stream/src/main/java/org/zidi/uber/redis/redisTest/RedisHashTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stream/src/main/java/org/zidi/uber/redis/redisTest/RedisListTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stream/src/main/java/org/zidi/uber/redis/redisTest/RedisSetTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stream/src/main/java/org/zidi/uber/redis/redisTest/RedisStringTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stream/src/main/java/org/zidi/uber/redis/redisTest/redisTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stream/src/main/java/org/zidi/uber/redis/service/RedisDemoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stream/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/common-core/src/main/java/org/zidi/uber/common/core/config/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/common-core/src/main/java/org/zidi/uber/common/core/constant/RedisConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-map/src/main/java/org/zidi/map/dto/request/UpdataDriverLocationRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stream/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Stream/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stream/src/main/java/org/zidi/uber/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Stream/src/main/java/org/zidi/uber/stream/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stream/src/main/java/org/zidi/uber/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/Stream/src/main/java/org/zidi/uber/stream/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stream/src/main/java/org/zidi/uber/OrderSummary.java" beforeDir="false" afterPath="$PROJECT_DIR$/Stream/src/main/java/org/zidi/uber/stream/OrderSummary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-order/src/main/java/org/zidi/order/controller/OrderCoreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-order/src/main/java/org/zidi/order/controller/OrderCoreController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-order/src/main/java/org/zidi/order/mapper/OrderInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-order/src/main/java/org/zidi/order/mapper/OrderInfoMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-order/src/main/java/org/zidi/order/service/Impl/OrderCoreServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-order/src/main/java/org/zidi/order/service/Impl/OrderCoreServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-order/src/main/java/org/zidi/order/service/OrderCoreService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-order/src/main/java/org/zidi/order/service/OrderCoreService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-order/src/main/resources/mapper/OrderInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-order/src/main/resources/mapper/OrderInfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-map/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-map/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-map/src/main/java/org/zidi/map/controller/LocationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-map/src/main/java/org/zidi/map/controller/LocationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-map/src/main/java/org/zidi/map/service/Impl/LocationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-map/src/main/java/org/zidi/map/service/Impl/LocationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-map/src/main/java/org/zidi/map/service/LocationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-map/src/main/java/org/zidi/map/service/LocationService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +31,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/3.1.8/spring-data-redis-3.1.8-sources.jar!/org/springframework/data/redis/core/RedisTemplate.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/service-client/service-customer-client/src/main/java/org/zidi/customer/client/feign/CustomerInfoFeignClient.java" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -228,7 +215,7 @@
       <workItem from="1750945120887" duration="1240000" />
       <workItem from="1751018302880" duration="13845000" />
       <workItem from="1751276923105" duration="17190000" />
-      <workItem from="1751700599367" duration="43056000" />
+      <workItem from="1751700599367" duration="49744000" />
     </task>
     <servers />
   </component>
