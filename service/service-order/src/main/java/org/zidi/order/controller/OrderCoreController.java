@@ -27,9 +27,8 @@ public class OrderCoreController {
     }
 
     @GetMapping("/getOrderStatus/{orderNo}")
-    public Integer getOrderStatus(@PathVariable String orderNo){
+    public String getOrderStatus(@PathVariable String orderNo){
         return orderCoreService.getOrderStatus(orderNo);
-
     }
 
 

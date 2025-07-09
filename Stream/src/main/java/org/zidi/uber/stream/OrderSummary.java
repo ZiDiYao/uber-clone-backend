@@ -1,4 +1,4 @@
-package org.zidi.uber;
+package org.zidi.uber.stream;
 
 import lombok.Getter;
 import lombok.Setter;

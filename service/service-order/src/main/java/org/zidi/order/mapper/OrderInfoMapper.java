@@ -12,4 +12,5 @@ public interface OrderInfoMapper {
     List<OrderInfo> selectAll();
     int updateOrder(OrderInfo orderInfo);
     int deleteById(Long id);
+    String getStatusByOrderNo(String orderNo);
 }

@@ -62,9 +62,17 @@
         SELECT * FROM daijia_order.order_info
     </select>
 
+    <select id="getStatusByOrderNo" resultType="java.lang.String" >
+
+    SELECT status FROM daijia_order.order_info WHERE order_no = #{order_no}
+
+    </select>
+
     <delete id="deleteById" parameterType="long">
         DELETE FROM daijia_order.order_info WHERE id = #{id}
     </delete>
+
+
 
 </mapper>
 

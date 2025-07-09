@@ -5,31 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b08325b9-946d-433d-a749-43584e6277b4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Stream/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stream/src/main/java/org/zidi/uber/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stream/src/main/java/org/zidi/uber/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stream/src/main/java/org/zidi/uber/OrderSummary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/common-core/src/main/java/org/zidi/uber/common/core/Enum/OrderStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service-order/src/main/java/org/zidi/order/entity/OrderInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service-order/src/main/java/org/zidi/order/mapper/OrderInfoMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service-order/src/main/resources/mapper/OrderInfoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service-order/src/test/java/org/zidi/order/mapper/StreamTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stream/src/main/java/org/zidi/uber/ExtraPracticeApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stream/src/main/java/org/zidi/uber/redis/Serializable/JacksonSerializeDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stream/src/main/java/org/zidi/uber/redis/Serializable/JdkSerializeDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stream/src/main/java/org/zidi/uber/redis/Serializable/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stream/src/main/java/org/zidi/uber/redis/config/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stream/src/main/java/org/zidi/uber/redis/redisTest/RedisHashTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stream/src/main/java/org/zidi/uber/redis/redisTest/RedisListTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stream/src/main/java/org/zidi/uber/redis/redisTest/RedisSetTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stream/src/main/java/org/zidi/uber/redis/redisTest/RedisStringTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stream/src/main/java/org/zidi/uber/redis/redisTest/redisTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stream/src/main/java/org/zidi/uber/redis/service/RedisDemoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stream/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/common-core/src/main/java/org/zidi/uber/common/core/BusinessException.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-core/src/main/java/org/zidi/uber/common/core/BusinessException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/common-core/src/main/java/org/zidi/uber/common/core/ErrorCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-core/src/main/java/org/zidi/uber/common/core/Enum/ErrorCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/common-core/src/main/java/org/zidi/uber/common/core/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-core/src/main/java/org/zidi/uber/common/core/Result.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/common-core/src/main/java/org/zidi/uber/common/core/ResultCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-core/src/main/java/org/zidi/uber/common/core/Enum/ResultCodeEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/service/Impl/CustomerAuthServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-customer/src/main/java/org/zidi/service/Impl/CustomerAuthServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-order/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-order/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stream/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Stream/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stream/src/main/java/org/zidi/uber/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Stream/src/main/java/org/zidi/uber/stream/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stream/src/main/java/org/zidi/uber/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/Stream/src/main/java/org/zidi/uber/stream/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stream/src/main/java/org/zidi/uber/OrderSummary.java" beforeDir="false" afterPath="$PROJECT_DIR$/Stream/src/main/java/org/zidi/uber/stream/OrderSummary.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service-order/src/main/java/org/zidi/order/controller/OrderCoreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-order/src/main/java/org/zidi/order/controller/OrderCoreController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-order/src/main/java/org/zidi/order/controller/OrderStatsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-order/src/main/java/org/zidi/order/controller/OrderStatsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-order/src/main/java/org/zidi/order/repository/OrderInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-order/src/main/java/org/zidi/order/mapper/OrderInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-order/src/main/java/org/zidi/order/mapper/OrderInfoMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service-order/src/main/java/org/zidi/order/service/Impl/OrderCoreServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-order/src/main/java/org/zidi/order/service/Impl/OrderCoreServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-order/src/main/java/org/zidi/order/service/Impl/OrderStatisticsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-order/src/main/java/org/zidi/order/service/Impl/OrderStatisticsServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service-order/src/main/java/org/zidi/order/service/OrderCoreService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-order/src/main/java/org/zidi/order/service/OrderCoreService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-order/src/main/java/org/zidi/order/service/OrderStatisticsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-order/src/main/java/org/zidi/order/service/OrderStatisticsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-order/src/main/resources/mapper/OrderInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-order/src/main/resources/mapper/OrderInfoMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +75,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "features/startOrder",
+    "git-widget-placeholder": "features/searchNearbyDrivers",
     "jdk.selected.JAVA_MODULE": "openjdk-18",
     "last_directory_selection": "/Users/yaozidi/Desktop/Uber-clone-backend/uber-clone-backend/service/service-order/src/test/java",
     "node.js.detected.package.eslint": "true",
@@ -105,13 +102,26 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="RuleTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.zidi.rules.RuleTest" />
-      <module name="service-rules" />
+  <component name="RunManager" selected="Spring Boot.ExtraPracticeApplication">
+    <configuration name="JacksonSerializeDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.zidi.uber.redis.Serializable.JacksonSerializeDemo" />
+      <module name="Stream" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.zidi.rules.*" />
+          <option name="PATTERN" value="org.zidi.uber.redis.Serializable.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JdkSerializeDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.zidi.uber.redis.Serializable.JdkSerializeDemo" />
+      <module name="Stream" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.zidi.uber.redis.Serializable.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -148,27 +158,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ServiceCustomerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="service-customer" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="org.zidi.ServiceCustomerApplication" />
-      <option name="VM_PARAMETERS" value="-Dhttp.proxyHost= -Dhttp.proxyPort= -Dhttps.proxyHost= -Dhttps.proxyPort= -Djava.net.useSystemProxies=false" />
+    <configuration name="ExtraPracticeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="Stream" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.zidi.uber.ExtraPracticeApplication" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.zidi.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ServiceMapApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="service-map" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="org.zidi.ServiceMapApplication" />
-      <option name="VM_PARAMETERS" value="-Dhttp.proxyHost= -Dhttp.proxyPort= -Dhttps.proxyHost= -Dhttps.proxyPort= -Djava.net.useSystemProxies=false" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.zidi.*" />
+          <option name="PATTERN" value="org.zidi.uber.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -191,19 +186,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.RuleTest" />
+      <item itemvalue="Application.JacksonSerializeDemo" />
+      <item itemvalue="Application.JdkSerializeDemo" />
       <item itemvalue="JUnit.RuleTest.testRule" />
-      <item itemvalue="Spring Boot.ServiceCustomerApplication" />
-      <item itemvalue="Spring Boot.ServiceMapApplication" />
+      <item itemvalue="Spring Boot.ExtraPracticeApplication" />
       <item itemvalue="Spring Boot.ServiceRulesApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.ExtraPracticeApplication" />
+        <item itemvalue="Application.JacksonSerializeDemo" />
+        <item itemvalue="Application.JdkSerializeDemo" />
         <item itemvalue="Spring Boot.ServiceRulesApplication" />
         <item itemvalue="JUnit.RuleTest.testRule" />
-        <item itemvalue="Spring Boot.ServiceCustomerApplication" />
-        <item itemvalue="Spring Boot.ServiceMapApplication" />
-        <item itemvalue="Application.RuleTest" />
       </list>
     </recent_temporary>
   </component>
@@ -233,7 +228,7 @@
       <workItem from="1750945120887" duration="1240000" />
       <workItem from="1751018302880" duration="13845000" />
       <workItem from="1751276923105" duration="17190000" />
-      <workItem from="1751700599367" duration="28645000" />
+      <workItem from="1751700599367" duration="43056000" />
     </task>
     <servers />
   </component>
