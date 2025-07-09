@@ -6,7 +6,7 @@ import org.zidi.order.dto.response.CurrentOrderInfoResponse;
 public interface OrderCoreService {
 
     String saveOrderInfo(OrderInfoFormRequest orderInfoForm);
-    Integer getOrderStatus(String orderId);
+    String getOrderStatus(String orderId);
     CurrentOrderInfoResponse searchCustomerCurrentOrder(Long customerId);
     CurrentOrderInfoResponse searchDriverCurrentOrder(Long driverId);
 

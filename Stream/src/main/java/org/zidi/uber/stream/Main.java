@@ -1,4 +1,4 @@
-package org.zidi.uber;
+package org.zidi.uber.stream;
 
 import java.math.BigDecimal;
 import java.util.Arrays;

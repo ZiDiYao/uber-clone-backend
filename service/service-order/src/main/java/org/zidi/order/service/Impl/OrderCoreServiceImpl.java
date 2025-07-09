@@ -62,12 +62,14 @@ public class OrderCoreServiceImpl implements OrderCoreService {
     }
 
     @Override
-    public Integer getOrderStatus(String OrderNo) {
-        // get the status from
-
-
-
-        return null;
+    public String getOrderStatus(String orderNo) {
+        String status = orderInfoMapper.getStatusByOrderNo(orderNo);
+        if (status == null) {
+            // 可以抛异常 / 返回默认值 / 返回提示
+            throw new RuntimeException("The order does not exits：" + orderNo);
+            // 或者：return "NOT_FOUND";
+        }
+        return status;
     }
 
     @Override
