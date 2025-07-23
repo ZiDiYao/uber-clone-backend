@@ -3,8 +3,11 @@ package org.zidi.map.controller;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
+import org.zidi.map.dto.request.SearchNearbyDriverRequest;
 import org.zidi.map.dto.request.UpdataDriverLocationRequest;
 import org.zidi.map.service.LocationService;
+
+import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
@@ -33,8 +36,18 @@ public class LocationController {
         return locationService.removeDriverLocation(driverId);
     }
 
+    /**
+     *  只用于返回给上一层,返回了 5km 内的 driver id
+     *  更高层的 layer 需要去 筛选 filter 使用其他 module feign 去筛选不同 driver 的 preferences
+     *  当然了, 算法有改进空间, 这样似乎效率毕竟低
+     * @param searchNearbyDriverRequest
+     * @return
+     */
 
-
+    @PostMapping("/searchNearbyDriver")
+    public List<Long> searchNearbyDriver(@RequestBody SearchNearbyDriverRequest searchNearbyDriverRequest){
+        return locationService.searchNearbyDrivers(searchNearbyDriverRequest);
+    }
 
 
 }
