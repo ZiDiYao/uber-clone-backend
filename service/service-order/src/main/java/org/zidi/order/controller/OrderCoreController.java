@@ -21,9 +21,7 @@ public class OrderCoreController {
 
     @RequestMapping("/saveOrderInfo")
     public String saveOrderInfo(@RequestBody OrderInfoFormRequest orderInfoFormRequest){
-
         return orderCoreService.saveOrderInfo(orderInfoFormRequest);
-
     }
 
     @GetMapping("/getOrderStatus/{orderNo}")
