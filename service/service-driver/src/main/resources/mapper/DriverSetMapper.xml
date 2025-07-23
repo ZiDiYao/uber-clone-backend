@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.zidi.service.driver.mapper.DriverSetMapper">
+
+    <select id="selectByDriverId"
+            resultType="org.zidi.service.driver.dto.DriverSetResponse">
+        SELECT id, driver_id, service_status, accept_distance,is_auto_accept
+        FROM driver_set
+        WHERE driver_id = #{driverId}
+            LIMIT 1
+    </select>
+
+</mapper>

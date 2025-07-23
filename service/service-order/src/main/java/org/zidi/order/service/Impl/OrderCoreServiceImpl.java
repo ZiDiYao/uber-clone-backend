@@ -56,7 +56,7 @@ public class OrderCoreServiceImpl implements OrderCoreService {
         entity.setExpectDistance(form.getExpectDistance());
         // 设置后端生成的字段
         entity.setStatus(OrderStatus.WAITING.getCode());
-        entity.setOrderNo(generateOrderNo()); // 假设你有这个方法
+        entity.setOrderNo(generateOrderNo());
         entity.setAcceptTime(null); // 还没接单
         return entity;
     }
